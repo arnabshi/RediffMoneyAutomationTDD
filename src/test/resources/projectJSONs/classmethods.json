@@ -1,0 +1,31 @@
+{
+	"classdetails": [
+		{
+			"class": "testCases.SessionTest",
+			"methods": [
+				"openUp",
+				"doLogin",
+				"doLogout"
+			]
+		},
+		{
+			"class": "testCases.PortfolioTest",
+			"methods": [
+				"createPortfolio",
+				"deletePortfolio",
+				"selectPortfolio"
+			]
+		},
+		{
+			"class": "testCases.StockTest",
+			"methods": [
+				"modifyStock",
+				"verifyStockQuantity",
+				"verifyTransactionHistory",
+				"addStockTest",
+				"verifyStockIsPresent",
+				"modifyStockTest"
+			]
+		}
+	]
+}

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test name="PortfolioTest">
+        <classes>
+            <class name="testCases.PortfolioTest">
+                <methods>
+                    <include name="createPortfolio"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="SessionTest">
+        <classes>
+            <class name="testCases.SessionTest">
+                <methods>
+                    <include name="doLogin"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="StockTest">
+        <classes>
+            <class name="testCases.StockTest">
+                <methods>
+                    <include name="modifyStocks"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
