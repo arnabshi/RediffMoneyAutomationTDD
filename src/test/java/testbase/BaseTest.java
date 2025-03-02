@@ -49,23 +49,26 @@ public class BaseTest {
 
 		String dataFlag = iTestContext.getCurrentXmlTest().getParameter("dataflag");
 		int iteration = Integer.parseInt(iTestContext.getCurrentXmlTest().getParameter("dataSetID"));
-		String sheetName = iTestContext.getCurrentXmlTest().getParameter("suiteName");
+		String suiteName = iTestContext.getCurrentXmlTest().getParameter("suiteName");
 
-		System.out.println(testdatajsonfilePath + "  " + dataFlag + "  " + iteration + "  " + sheetName);
+		System.out.println(testdatajsonfilePath + "  " + dataFlag + "  " + iteration + "  " + suiteName);
 
 		// This is for JSON Reader
 		JSONObject data = new DataUtil().getTestData(testdatajsonfilePath, dataFlag, iteration);
 
 		// This is for Excel Reader
 //		JSONObject data = new ExcelReader().getTestData(sheetName, dataFlag, testdatajsonfilePath, iteration);
-		iTestContext.setAttribute("testData", data);
 
 		String runMode = (String) data.get("runmode");
-
 		if (!runMode.equalsIgnoreCase("Yes")) {
 			extentTest.log(Status.SKIP, "RunMode in Test Data is not True");
 			throw new SkipException("RunMode in Test Data is not True");
 		}
+
+		iTestContext.setAttribute("testData", data);
+
+		iTestContext.setAttribute("userName", iTestContext.getCurrentXmlTest().getParameter("userName"));
+		iTestContext.setAttribute("password", iTestContext.getCurrentXmlTest().getParameter("password"));
 	}
 
 	@BeforeMethod

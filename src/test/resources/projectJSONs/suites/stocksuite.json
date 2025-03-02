@@ -13,9 +13,10 @@
 						"addStock"
 					],
 					"methods": [
+						"openUp",
 						"doLogin",
 						"selectPortfolio",
-						"addStockTest",
+						"addStock",
 						"verifyStockIsPresent",
 						"verifyTransactionHistory"
 					]
@@ -35,6 +36,7 @@
 						"sellStock"
 					],
 					"methods": [
+						"openUp",
 						"doLogin",
 						"selectPortfolio",
 						"verifyStockIsPresent",
@@ -59,6 +61,7 @@
 						"addStock"
 					],
 					"methods": [
+						"openUp",
 						"doLogin",
 						"selectPortfolio",
 						"verifyStockIsPresent",

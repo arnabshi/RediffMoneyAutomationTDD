@@ -4,21 +4,25 @@
 		"firefox"
 	],
 	"parallelsuites": "1",
+	"credential": {
+		"userName": "****",
+		"password": "****"
+	},
 	"testsuites": [
 		{
 			"name": "Manage Portfolio Suite",
 			"runmode": "Yes",
 			"paralleltests": "No",
 			"testdatajsonfile": "testJSONData\\portfolioData.json",
-			"testdataxlsfile": "XLS_Data//TestExcelData.xlsx",
+			"testdataxlsfile": "",
 			"suitefilename": "suites\\portfoliosuite.json"
 		},
 		{
 			"name": "Manage Stocks",
-			"runmode": "No",
+			"runmode": "Yes",
 			"paralleltests": "No",
 			"testdatajsonfile": "testJSONData\\stocksData.json",
-			"testdataxlsfile": "XLS_Data//TestExcelData.xlsx",
+			"testdataxlsfile": "",
 			"suitefilename": "suites\\stocksuite.json"
 		}
 	]

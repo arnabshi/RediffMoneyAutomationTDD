@@ -12,6 +12,8 @@ public class StockTest extends BaseTest {
 	@Parameters({ "action" })
 	@Test
 	public void modifyStock(String action, ITestContext context) {
+		app.logInfo("modifyStock method started ----------");
+		
 		JSONObject data = (JSONObject) context.getAttribute("testData");
 		String companyName = (String) data.get("companyName");
 		String modifiedQuantity = (String) data.get("stockQuantity");
@@ -20,8 +22,8 @@ public class StockTest extends BaseTest {
 
 		app.logInfo("Modifying Quantity : " + modifiedQuantity + " of Stock :: " + companyName);
 
-		int quantityBeforeSelling = app.findCurrentStockQuantity(companyName);
-		context.setAttribute("quantityBeforeSelling", quantityBeforeSelling);
+		int quantityBeforeModify = app.findCurrentStockQuantity(companyName);
+		context.setAttribute("quantityBeforeModify", quantityBeforeModify);
 
 		app.goToBuySell(companyName);
 		if(action.equals("addStock")) {
@@ -36,51 +38,50 @@ public class StockTest extends BaseTest {
 		app.set("buysellprice_id", stockPrice);
 		app.click("buySellStockButton_id");
 		app.waitforWebPageToLoad();
-		app.logInfo("Stock :: " + companyName + " modified Successfully....");
+		app.wait(2);
+		app.logPASS("Stock :: " + companyName + " modified Successfully....");
 	}
 	
 	@Parameters({ "action" })
 	@Test
 	public void verifyStockQuantity(String action, ITestContext context) {
+		app.logInfo("verifyStockQuantity method started for :: " + action + "---------");
+		
 		JSONObject data = (JSONObject) context.getAttribute("testData");
 		String companyName = (String) data.get("companyName");
 		int modifiedQuantity = Integer.parseInt((String)data.get("stockQuantity"));
 		int expectedModifiedQuantity = 0;
 
-		app.logInfo("Verify Stock Quantity After Action :: " + action);
 		int quantity = app.findCurrentStockQuantity(companyName);
 
-		int quantityBeforeSelling = (int) context.getAttribute("quantityBeforeSelling");
+		int quantityBeforeModify = (int) context.getAttribute("quantityBeforeModify");
 
 		if (action.equals("sellStock")) {
-			expectedModifiedQuantity = quantityBeforeSelling - quantity;
+			expectedModifiedQuantity = quantityBeforeModify - quantity;
 		} else if (action.equals("addStock")) {
-			expectedModifiedQuantity = quantity - quantityBeforeSelling;
+			expectedModifiedQuantity = quantity - quantityBeforeModify;
 		}
 
-		app.logInfo("Earlier Stock Quantity : " + quantityBeforeSelling);
+		app.logInfo("Earlier Stock Quantity : " + quantityBeforeModify);
 		app.logInfo("New Stock Quantity : " + quantity);
 
 		if (expectedModifiedQuantity != modifiedQuantity) {
 			app.reportFailure("Expected Modified Quantity is not matching", true);
 		}
 
-		app.logInfo("Stock Quantity Changed as per expected :: " + expectedModifiedQuantity);
+		app.logPASS("Stock Quantity Changed as per expected :: " + expectedModifiedQuantity);
 
 	}
 	
 	@Test
 	public void addStock(ITestContext context) {
+		app.logInfo("addStock method started ----------");
+		
 		JSONObject data = (JSONObject) context.getAttribute("testData");
 		String companyName = (String) data.get("companyName");
 		String stockQuantity = (String) data.get("stockQuantity");
 		String stockPrice = (String) data.get("stockPrice");
 		String selectionDate = (String) data.get("selectionDate");
-
-		app.logInfo("Selecting Stocks in Portfolio");
-		
-		int quantityBeforeSelling = app.findCurrentStockQuantity(companyName);
-		context.setAttribute("quantityBeforeSelling", quantityBeforeSelling);
 
 		app.click("addStock_id");
 		app.set("addstockname_id", companyName);
@@ -93,49 +94,53 @@ public class StockTest extends BaseTest {
 		app.click("addStockButton_id");
 		app.waitforWebPageToLoad();
 
-		app.logInfo("Stock Added Successfully....");
+		app.logPASS("Stock Added Successfully....");
+		
+		int quantityBeforeModify = app.findCurrentStockQuantity(companyName);
+		context.setAttribute("quantityBeforeModify", quantityBeforeModify);
 	}
 
 	@Test
 	public void verifyStockIsPresent(ITestContext context) {
+		app.logInfo("verifyStockIsPresent method started ----------");
 		JSONObject data = (JSONObject) context.getAttribute("testData");
 		String companyName = (String) data.get("companyName");
 
-		app.logInfo("Verifying Added Stock in Portfolio...");
 		int rowNum = app.getRowNumWithCellData("stockTable_id", companyName);
 
 		if (rowNum == -1) {
 			app.reportFailure(companyName + " is not present in Stock List!!! ", true);
 		}
-		app.logInfo(companyName + " -- Found in Portfolio Stocks");
+		app.logPASS(companyName + " -- Found in Portfolio Stocks");
 	}
 
 	@Parameters({ "action" })
 	@Test
 	public void verifyTransactionHistory(String action, ITestContext context) {
+		app.logInfo("verifyTransactionHistory method started for :: " + action + "----------");
 		JSONObject data = (JSONObject) context.getAttribute("testData");
 		String companyName = (String) data.get("companyName");
 		String modifiedQuantity = (String) data.get("stockQuantity");
 
-		app.logInfo("Verify Stock Transaction History After Operation :: " + action);
 		app.openTrasactionHistory(companyName);
 		String quantityDisplayed = app.getText("trasactionTable_xpath");
+
+		if (action.equals("sellStock")) {
+			modifiedQuantity = "-" + modifiedQuantity;
+		}
 		
 		if(!modifiedQuantity.equals(quantityDisplayed)) {
 			app.reportFailure("Got changed quantity in transaction history as " + quantityDisplayed, true);
 		}
-
-		if (action.equals("sellStock")) {
-			quantityDisplayed = "-" + quantityDisplayed;
-		}
 		
 		app.logInfo("Latest Change in Stock : " + companyName + " is :: " + quantityDisplayed);
+		app.logPASS("Transaction verified successfully");
 	}
 	
-	@Test
-	public void verifyStockQuantity() {
-		String companyName = "HDFC Bank";
-		app.logInfo("Verify stock quantity after add stock");
-		app.findCurrentStockQuantity(companyName);
-	}
+//	@Test
+//	public void verifyStockQuantity() {
+//		String companyName = "HDFC Bank";
+//		app.logInfo("Verify stock quantity after add stock");
+//		app.findCurrentStockQuantity(companyName);
+//	}
 }

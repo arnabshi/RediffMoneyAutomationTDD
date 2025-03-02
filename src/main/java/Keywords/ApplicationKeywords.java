@@ -55,6 +55,12 @@ public class ApplicationKeywords extends ValidationKeywords {
 		}
 		
 		driver.findElement(By.cssSelector("table#stock > tbody > tr:nth-child(" + rowNum + ") >td:nth-child(1)")).click();
+		
+		String selectedCompany=driver.findElement(By.cssSelector("table#stock > tbody > tr:nth-child(" + rowNum + ") >td:nth-child(2)")).getText();
+		if(!selectedCompany.equals(companyName)) {
+			reportFailure("wrong company selected for modifying stock "+ rowNum, true);
+		}
+		
 		driver.findElement(By.cssSelector("table#stock > tbody > tr:nth-child(" + rowNum + ") input.buySell")).click();
 		waitforWebPageToLoad();
 	}
@@ -72,7 +78,7 @@ public class ApplicationKeywords extends ValidationKeywords {
 	}
 	
 	public int findCurrentStockQuantity(String compnayName) {
-		int rowNum=getRowNumWithCellData("stockTable_xpath", compnayName);
+		int rowNum=getRowNumWithCellData("stockTable_id", compnayName);
 		if(rowNum==-1) {
 			logError("Stock quantity is 0 as given stock - " + compnayName + " is not present in stock list");
 			return 0;
@@ -93,7 +99,7 @@ public class ApplicationKeywords extends ValidationKeywords {
 			for (int cNum = 0; cNum < cells.size(); cNum++) {
 				WebElement cell = cells.get(cNum);
 				if (cell.getText().contains(compnayName))
-					return (rNum+1);
+					return (rNum);
 			}
 		}
 		return -1; // data is not found

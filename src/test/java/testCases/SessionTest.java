@@ -1,5 +1,6 @@
 package testCases;
 
+import org.testng.ITestContext;
 import org.testng.annotations.Test;
 
 import testbase.BaseTest;
@@ -16,12 +17,16 @@ public class SessionTest extends BaseTest {
 	}
 
 	@Test
-	public void doLogin() {
-		app.logInfo("Login to application");
+	public void doLogin(ITestContext context) {
+		app.logInfo("doLogin method started ---------- ");
 		app.click("signIn_linkText");
 		app.waitforWebPageToLoad();
-		app.set("userName_id", "arnab1712@rediffmail.com");
-		app.set("password_xpath", "Rediff#098");
+
+		String userName = (String) context.getAttribute("userName");
+		String password = (String) context.getAttribute("password");
+		app.set("userName_id", userName);
+		app.set("password_xpath", password);
+
 		app.wait(30);
 		app.clickButton("submitBtn_id");
 		app.validateTextInPage("arnab1712");

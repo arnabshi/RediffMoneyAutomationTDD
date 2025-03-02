@@ -32,6 +32,7 @@ public class ValidationKeywords extends ActionKeywords {
 		if (!selectedValue.equals(value)) {
 			reportFailure("Entered " + value + " is not availble in Portfolio List", true);
 		}
+		logPASS("Selected right portfolio");
 	}
 
 	public void validateSelectedValueNotInDropDown(String locatorKey, String value) {
@@ -40,5 +41,6 @@ public class ValidationKeywords extends ActionKeywords {
 		if (selectedValue.equals(value)) {
 			reportFailure("Portfolio " + value + " is  availble in Portfolio List", true);
 		}
+		logPASS(value + " is not present in dropdown as expected");
 	}
 }

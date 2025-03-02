@@ -28,6 +28,10 @@ public class JSONRunner {
 		String parallelsuites = (String) classJSON.get("parallelsuites");
 		JSONArray testsuites = (JSONArray) classJSON.get("testsuites");
 
+		JSONObject credentialJson = (JSONObject) classJSON.get("credential");
+		String userName = (String) credentialJson.get("userName");
+		String password = (String) credentialJson.get("password");
+
 		TestNGRunner testNG = new TestNGRunner(Integer.parseInt(parallelsuites));
 
 		for (int testID = 0; testID < testsuites.size(); testID++) {
@@ -55,7 +59,7 @@ public class JSONRunner {
 				JSONParser suiteParser = new JSONParser();
 				JSONObject suiteJson = (JSONObject) suiteParser.parse(new FileReader(new File(testsuitePath)));
 
-				testNG.addListener("listner.MyTestngListner");
+//				testNG.addListener("listner.MyTestngListner");
 
 				JSONArray suiteTestCases = (JSONArray) suiteJson.get("testcases");
 				for (int suiteTest = 0; suiteTest < suiteTestCases.size(); suiteTest++) {
@@ -98,6 +102,8 @@ public class JSONRunner {
 								testNG.addTestParameter("dataflag", dataflag);
 								testNG.addTestParameter("dataSetID", String.valueOf(dataSetID));
 								testNG.addTestParameter("suiteName", suiteName);
+								testNG.addTestParameter("userName", userName);
+								testNG.addTestParameter("password", password);
 
 								// Read Methods and associated Classes
 								List<String> includeMethods = new ArrayList<String>();

@@ -22,9 +22,8 @@
 				"modifyStock",
 				"verifyStockQuantity",
 				"verifyTransactionHistory",
-				"addStockTest",
-				"verifyStockIsPresent",
-				"modifyStockTest"
+				"addStock",
+				"verifyStockIsPresent"
 			]
 		}
 	]

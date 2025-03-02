@@ -10,6 +10,8 @@ public class PortfolioTest extends BaseTest {
 
 	@Test
 	public void createPortfolio(ITestContext context) {
+		app.logInfo("createPortfolio method started ----------");
+		
 		JSONObject data = (JSONObject) context.getAttribute("testData");
 		String portfolioName = (String) data.get("portfolioname");
 		
@@ -19,31 +21,40 @@ public class PortfolioTest extends BaseTest {
 		app.set("porfolioname_id", portfolioName);
 		app.click("createPortfolioButton_id");
 		app.waitforWebPageToLoad();
+		app.wait(2);
 		app.validateSelectedValueInDropDown("portfolio_dropdown_id", portfolioName);
 	}
 
 	@Test
 	public void deletePortfolio(ITestContext context) {
+		app.logInfo("deletePortfolio method started ----------");
+		
 		JSONObject data = (JSONObject) context.getAttribute("testData");
 		String portfolioName = (String) data.get("portfolioname");
 		
 		app.logInfo("Delete Porfolio :: " + portfolioName);
 		app.selectByVisibleText("portfolio_dropdown_id", portfolioName);
 		app.waitforWebPageToLoad();
+		app.wait(2);
 		app.click("deletePortfolio_id");
 		app.acceptAlert();
 		app.waitforWebPageToLoad();
+		app.wait(2);
 		app.validateSelectedValueNotInDropDown("portfolio_dropdown_id", portfolioName);
 
 	}
 
 	@Test
 	public void selectPortfolio(ITestContext context) {
+		app.logInfo("selectPortfolio method started ----------");
+		
 		JSONObject data = (JSONObject) context.getAttribute("testData");
 		String portfolioName = (String) data.get("portfolioname");
 		
 		app.logInfo("Select Portfolio : " + portfolioName);
 		app.selectByVisibleText("portfolio_dropdown_id", portfolioName);
 		app.waitforWebPageToLoad();
+		app.wait(2);
+		app.validateSelectedValueInDropDown("portfolio_dropdown_id", portfolioName);
 	}
 }

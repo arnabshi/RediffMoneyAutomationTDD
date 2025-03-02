@@ -183,5 +183,8 @@ public class GenericKeywords {
     public void logSkip(String msg) {
         test.log(Status.SKIP, msg);
     }
+    public void logPASS(String msg) {
+        test.log(Status.PASS, msg);
+    }
 
 }

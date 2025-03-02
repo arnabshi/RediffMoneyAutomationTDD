@@ -1,39 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="15" total="24" passed="3" failed="0" skipped="6">
+<testng-results ignored="77" total="131" passed="33" failed="2" skipped="19">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-02-16T19:54:30 IST" name="Manage Portfolio Suite" finished-at="2025-02-16T19:55:41 IST" duration-ms="70435">
+  <suite started-at="2025-03-02T18:51:09 IST" name="Manage Portfolio Suite" finished-at="2025-03-02T18:57:02 IST" duration-ms="352978">
     <groups>
     </groups>
-    <test started-at="2025-02-16T19:54:30 IST" name="Manage Portfolio Suite : Delete Portfolio Method 1" finished-at="2025-02-16T19:55:41 IST" duration-ms="70391">
+    <test started-at="2025-03-02T18:51:09 IST" name="Manage Portfolio Suite : Create Portfolio Method 1" finished-at="2025-03-02T18:53:00 IST" duration-ms="110113">
       <class name="testCases.PortfolioTest">
-        <test-method is-config="true" signature="beforeMethod(org.testng.ITestContext)[pri:0, instance:testCases.PortfolioTest@27f723]" started-at="2025-02-16T19:55:30 IST" name="beforeMethod" finished-at="2025-02-16T19:55:30 IST" duration-ms="0" status="PASS">
+        <test-method signature="createPortfolio(org.testng.ITestContext)[pri:0, instance:testCases.PortfolioTest@5f3a4b84]" started-at="2025-03-02T18:52:48 IST" name="createPortfolio" finished-at="2025-03-02T18:52:59 IST" duration-ms="10795" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@35c09b94]]>
+                <![CDATA[org.testng.TestRunner@cda0432]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createPortfolio -->
+        <test-method is-config="true" signature="beforeMethod(org.testng.ITestContext)[pri:0, instance:testCases.PortfolioTest@5f3a4b84]" started-at="2025-03-02T18:52:48 IST" name="beforeMethod" finished-at="2025-03-02T18:52:48 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@cda0432]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="deletePortfolio(org.testng.ITestContext)[pri:0, instance:testCases.PortfolioTest@27f723]" started-at="2025-02-16T19:55:30 IST" name="deletePortfolio" finished-at="2025-02-16T19:55:40 IST" duration-ms="9048" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestContext)[pri:0, instance:testCases.PortfolioTest@5f3a4b84]" started-at="2025-03-02T18:52:59 IST" name="afterMethod" finished-at="2025-03-02T18:52:59 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@35c09b94]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- deletePortfolio -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestContext)[pri:0, instance:testCases.PortfolioTest@27f723]" started-at="2025-02-16T19:55:40 IST" name="afterMethod" finished-at="2025-02-16T19:55:40 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@35c09b94]]>
+                <![CDATA[org.testng.TestRunner@cda0432]]>
               </value>
             </param>
           </params>
@@ -42,74 +42,562 @@
         </test-method> <!-- afterMethod -->
       </class> <!-- testCases.PortfolioTest -->
       <class name="testCases.SessionTest">
-        <test-method is-config="true" signature="beforeTest(org.testng.ITestContext)[pri:0, instance:testCases.SessionTest@42d8062c]" started-at="2025-02-16T19:54:30 IST" name="beforeTest" finished-at="2025-02-16T19:54:31 IST" duration-ms="440" status="PASS">
+        <test-method is-config="true" signature="beforeTest(org.testng.ITestContext)[pri:0, instance:testCases.SessionTest@45820e51]" started-at="2025-03-02T18:51:10 IST" name="beforeTest" finished-at="2025-03-02T18:51:10 IST" duration-ms="393" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@35c09b94]]>
+                <![CDATA[org.testng.TestRunner@cda0432]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method is-config="true" signature="beforeMethod(org.testng.ITestContext)[pri:0, instance:testCases.SessionTest@42d8062c]" started-at="2025-02-16T19:54:31 IST" name="beforeMethod" finished-at="2025-02-16T19:54:31 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="beforeMethod(org.testng.ITestContext)[pri:0, instance:testCases.SessionTest@45820e51]" started-at="2025-03-02T18:51:10 IST" name="beforeMethod" finished-at="2025-03-02T18:51:10 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@35c09b94]]>
+                <![CDATA[org.testng.TestRunner@cda0432]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="openUp()[pri:0, instance:testCases.SessionTest@42d8062c]" started-at="2025-02-16T19:54:31 IST" name="openUp" finished-at="2025-02-16T19:54:58 IST" duration-ms="26973" status="PASS">
+        <test-method signature="openUp()[pri:0, instance:testCases.SessionTest@45820e51]" started-at="2025-03-02T18:51:10 IST" name="openUp" finished-at="2025-03-02T18:52:09 IST" duration-ms="59251" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openUp -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestContext)[pri:0, instance:testCases.SessionTest@42d8062c]" started-at="2025-02-16T19:54:58 IST" name="afterMethod" finished-at="2025-02-16T19:54:58 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="beforeMethod(org.testng.ITestContext)[pri:0, instance:testCases.SessionTest@45820e51]" started-at="2025-03-02T18:52:09 IST" name="beforeMethod" finished-at="2025-03-02T18:52:09 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@35c09b94]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod(org.testng.ITestContext)[pri:0, instance:testCases.SessionTest@42d8062c]" started-at="2025-02-16T19:54:58 IST" name="beforeMethod" finished-at="2025-02-16T19:54:58 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@35c09b94]]>
+                <![CDATA[org.testng.TestRunner@cda0432]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="doLogin()[pri:0, instance:testCases.SessionTest@42d8062c]" started-at="2025-02-16T19:54:58 IST" name="doLogin" finished-at="2025-02-16T19:55:30 IST" duration-ms="32840" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- doLogin -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestContext)[pri:0, instance:testCases.SessionTest@42d8062c]" started-at="2025-02-16T19:55:30 IST" name="afterMethod" finished-at="2025-02-16T19:55:30 IST" duration-ms="1" status="PASS">
+        <test-method signature="doLogin(org.testng.ITestContext)[pri:0, instance:testCases.SessionTest@45820e51]" started-at="2025-03-02T18:52:09 IST" name="doLogin" finished-at="2025-03-02T18:52:48 IST" duration-ms="38869" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@35c09b94]]>
+                <![CDATA[org.testng.TestRunner@cda0432]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doLogin -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestContext)[pri:0, instance:testCases.SessionTest@45820e51]" started-at="2025-03-02T18:52:09 IST" name="afterMethod" finished-at="2025-03-02T18:52:09 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@cda0432]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterTest(org.testng.ITestContext)[pri:0, instance:testCases.SessionTest@42d8062c]" started-at="2025-02-16T19:55:40 IST" name="afterTest" finished-at="2025-02-16T19:55:41 IST" duration-ms="1041" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestContext)[pri:0, instance:testCases.SessionTest@45820e51]" started-at="2025-03-02T18:52:48 IST" name="afterMethod" finished-at="2025-03-02T18:52:48 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@35c09b94]]>
+                <![CDATA[org.testng.TestRunner@cda0432]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterTest(org.testng.ITestContext)[pri:0, instance:testCases.SessionTest@45820e51]" started-at="2025-03-02T18:52:59 IST" name="afterTest" finished-at="2025-03-02T18:53:00 IST" duration-ms="766" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@cda0432]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- testCases.SessionTest -->
+    </test> <!-- Manage Portfolio Suite : Create Portfolio Method 1 -->
+    <test started-at="2025-03-02T18:53:00 IST" name="Manage Portfolio Suite : Create Portfolio Method 2" finished-at="2025-03-02T18:53:00 IST" duration-ms="15">
+      <class name="testCases.PortfolioTest">
+        <test-method signature="createPortfolio(org.testng.ITestContext)[pri:0, instance:testCases.PortfolioTest@64485a47]" started-at="2025-03-02T18:53:00 IST" name="createPortfolio" finished-at="2025-03-02T18:53:00 IST" duration-ms="0" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@458544e0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createPortfolio -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestContext)[pri:0, instance:testCases.PortfolioTest@64485a47]" started-at="2025-03-02T18:53:00 IST" name="afterMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1740921780153" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(org.testng.ITestContext)[pri:0, instance:testCases.PortfolioTest@64485a47]" started-at="2025-03-02T18:53:00 IST" name="beforeMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1740921780153" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+      </class> <!-- testCases.PortfolioTest -->
+      <class name="testCases.SessionTest">
+        <test-method is-config="true" signature="beforeTest(org.testng.ITestContext)[pri:0, instance:testCases.SessionTest@1990a65e]" started-at="2025-03-02T18:53:00 IST" name="beforeTest" finished-at="2025-03-02T18:53:00 IST" duration-ms="15" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@458544e0]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[RunMode in Test Data is not True]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: RunMode in Test Data is not True
+at testbase.BaseTest.beforeTest(BaseTest.java:65)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+at org.testng.TestRunner.run(TestRunner.java:589)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at runner.TestNGRunner.run(TestNGRunner.java:32)
+at runner.JSONRunner.main(JSONRunner.java:134)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestContext)[pri:0, instance:testCases.SessionTest@1990a65e]" started-at="2025-03-02T18:53:00 IST" name="afterMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1740921780153" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestContext)[pri:0, instance:testCases.SessionTest@1990a65e]" started-at="2025-03-02T18:53:00 IST" name="afterMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1740921780153" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method signature="doLogin(org.testng.ITestContext)[pri:0, instance:testCases.SessionTest@1990a65e]" started-at="2025-03-02T18:53:00 IST" name="doLogin" finished-at="2025-03-02T18:53:00 IST" duration-ms="0" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@458544e0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doLogin -->
+        <test-method is-config="true" signature="beforeMethod(org.testng.ITestContext)[pri:0, instance:testCases.SessionTest@1990a65e]" started-at="2025-03-02T18:53:00 IST" name="beforeMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1740921780153" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="beforeMethod(org.testng.ITestContext)[pri:0, instance:testCases.SessionTest@1990a65e]" started-at="2025-03-02T18:53:00 IST" name="beforeMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1740921780153" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="openUp()[pri:0, instance:testCases.SessionTest@1990a65e]" started-at="2025-03-02T18:53:00 IST" name="openUp" finished-at="2025-03-02T18:53:00 IST" duration-ms="0" status="SKIP">
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[RunMode in Test Data is not True]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: RunMode in Test Data is not True
+at testbase.BaseTest.beforeTest(BaseTest.java:65)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+at org.testng.TestRunner.run(TestRunner.java:589)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at runner.TestNGRunner.run(TestNGRunner.java:32)
+at runner.JSONRunner.main(JSONRunner.java:134)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openUp -->
+        <test-method is-config="true" signature="afterTest(org.testng.ITestContext)[pri:0, instance:testCases.SessionTest@1990a65e]" started-at="2025-03-02T18:53:00 IST" name="afterTest" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1740921780153" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- testCases.SessionTest -->
+    </test> <!-- Manage Portfolio Suite : Create Portfolio Method 2 -->
+    <test started-at="2025-03-02T18:53:00 IST" name="Manage Portfolio Suite : Create Portfolio Method 3" finished-at="2025-03-02T18:53:00 IST" duration-ms="4">
+      <class name="testCases.PortfolioTest">
+        <test-method is-config="true" signature="beforeMethod(org.testng.ITestContext)[pri:0, instance:testCases.PortfolioTest@150c158]" started-at="2025-03-02T18:53:00 IST" name="beforeMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1740921780175" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestContext)[pri:0, instance:testCases.PortfolioTest@150c158]" started-at="2025-03-02T18:53:00 IST" name="afterMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1740921780175" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method signature="createPortfolio(org.testng.ITestContext)[pri:0, instance:testCases.PortfolioTest@150c158]" started-at="2025-03-02T18:53:00 IST" name="createPortfolio" finished-at="2025-03-02T18:53:00 IST" duration-ms="0" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@201aa8c1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createPortfolio -->
+      </class> <!-- testCases.PortfolioTest -->
+      <class name="testCases.SessionTest">
+        <test-method is-config="true" signature="beforeTest(org.testng.ITestContext)[pri:0, instance:testCases.SessionTest@2e3fc542]" started-at="2025-03-02T18:53:00 IST" name="beforeTest" finished-at="2025-03-02T18:53:00 IST" duration-ms="2" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@201aa8c1]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[RunMode in Test Data is not True]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: RunMode in Test Data is not True
+at testbase.BaseTest.beforeTest(BaseTest.java:65)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+at org.testng.TestRunner.run(TestRunner.java:589)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at runner.TestNGRunner.run(TestNGRunner.java:32)
+at runner.JSONRunner.main(JSONRunner.java:134)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method is-config="true" signature="beforeMethod(org.testng.ITestContext)[pri:0, instance:testCases.SessionTest@2e3fc542]" started-at="2025-03-02T18:53:00 IST" name="beforeMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1740921780173" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestContext)[pri:0, instance:testCases.SessionTest@2e3fc542]" started-at="2025-03-02T18:53:00 IST" name="afterMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1740921780173" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method signature="openUp()[pri:0, instance:testCases.SessionTest@2e3fc542]" started-at="2025-03-02T18:53:00 IST" name="openUp" finished-at="2025-03-02T18:53:00 IST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openUp -->
+        <test-method is-config="true" signature="afterTest(org.testng.ITestContext)[pri:0, instance:testCases.SessionTest@2e3fc542]" started-at="2025-03-02T18:53:00 IST" name="afterTest" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1740921780175" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestContext)[pri:0, instance:testCases.SessionTest@2e3fc542]" started-at="2025-03-02T18:53:00 IST" name="afterMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1740921780175" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(org.testng.ITestContext)[pri:0, instance:testCases.SessionTest@2e3fc542]" started-at="2025-03-02T18:53:00 IST" name="beforeMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1740921780175" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="doLogin(org.testng.ITestContext)[pri:0, instance:testCases.SessionTest@2e3fc542]" started-at="2025-03-02T18:53:00 IST" name="doLogin" finished-at="2025-03-02T18:53:00 IST" duration-ms="0" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@201aa8c1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doLogin -->
+      </class> <!-- testCases.SessionTest -->
+    </test> <!-- Manage Portfolio Suite : Create Portfolio Method 3 -->
+    <test started-at="2025-03-02T18:53:00 IST" name="Manage Portfolio Suite : Create Portfolio Method 4" finished-at="2025-03-02T18:55:03 IST" duration-ms="123181">
+      <class name="testCases.PortfolioTest">
+        <test-method is-config="true" signature="beforeMethod(org.testng.ITestContext)[pri:0, instance:testCases.PortfolioTest@704d6e83]" started-at="2025-03-02T18:54:27 IST" name="beforeMethod" finished-at="2025-03-02T18:54:27 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@5da7cee2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="createPortfolio(org.testng.ITestContext)[pri:0, instance:testCases.PortfolioTest@704d6e83]" started-at="2025-03-02T18:54:27 IST" name="createPortfolio" finished-at="2025-03-02T18:55:03 IST" duration-ms="35281" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@5da7cee2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createPortfolio -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestContext)[pri:0, instance:testCases.PortfolioTest@704d6e83]" started-at="2025-03-02T18:55:03 IST" name="afterMethod" finished-at="2025-03-02T18:55:03 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@5da7cee2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- testCases.PortfolioTest -->
+      <class name="testCases.SessionTest">
+        <test-method is-config="true" signature="beforeTest(org.testng.ITestContext)[pri:0, instance:testCases.SessionTest@1786f9d5]" started-at="2025-03-02T18:53:00 IST" name="beforeTest" finished-at="2025-03-02T18:53:00 IST" duration-ms="4" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@5da7cee2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method is-config="true" signature="beforeMethod(org.testng.ITestContext)[pri:0, instance:testCases.SessionTest@1786f9d5]" started-at="2025-03-02T18:53:00 IST" name="beforeMethod" finished-at="2025-03-02T18:53:00 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@5da7cee2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="openUp()[pri:0, instance:testCases.SessionTest@1786f9d5]" started-at="2025-03-02T18:53:00 IST" name="openUp" finished-at="2025-03-02T18:53:52 IST" duration-ms="52461" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openUp -->
+        <test-method is-config="true" signature="beforeMethod(org.testng.ITestContext)[pri:0, instance:testCases.SessionTest@1786f9d5]" started-at="2025-03-02T18:53:52 IST" name="beforeMethod" finished-at="2025-03-02T18:53:52 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@5da7cee2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestContext)[pri:0, instance:testCases.SessionTest@1786f9d5]" started-at="2025-03-02T18:53:52 IST" name="afterMethod" finished-at="2025-03-02T18:53:52 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@5da7cee2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method signature="doLogin(org.testng.ITestContext)[pri:0, instance:testCases.SessionTest@1786f9d5]" started-at="2025-03-02T18:53:52 IST" name="doLogin" finished-at="2025-03-02T18:54:27 IST" duration-ms="35083" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@5da7cee2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doLogin -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestContext)[pri:0, instance:testCases.SessionTest@1786f9d5]" started-at="2025-03-02T18:54:27 IST" name="afterMethod" finished-at="2025-03-02T18:54:27 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@5da7cee2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterTest(org.testng.ITestContext)[pri:0, instance:testCases.SessionTest@1786f9d5]" started-at="2025-03-02T18:55:03 IST" name="afterTest" finished-at="2025-03-02T18:55:03 IST" duration-ms="351" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@5da7cee2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- testCases.SessionTest -->
+    </test> <!-- Manage Portfolio Suite : Create Portfolio Method 4 -->
+    <test started-at="2025-03-02T18:55:03 IST" name="Manage Portfolio Suite : Delete Portfolio Method 1" finished-at="2025-03-02T18:57:02 IST" duration-ms="119578">
+      <class name="testCases.PortfolioTest">
+        <test-method is-config="true" signature="beforeMethod(org.testng.ITestContext)[pri:0, instance:testCases.PortfolioTest@706a04ae]" started-at="2025-03-02T18:56:41 IST" name="beforeMethod" finished-at="2025-03-02T18:56:41 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@221dad51]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="deletePortfolio(org.testng.ITestContext)[pri:0, instance:testCases.PortfolioTest@706a04ae]" started-at="2025-03-02T18:56:41 IST" name="deletePortfolio" finished-at="2025-03-02T18:57:02 IST" duration-ms="21218" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@221dad51]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deletePortfolio -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestContext)[pri:0, instance:testCases.PortfolioTest@706a04ae]" started-at="2025-03-02T18:57:02 IST" name="afterMethod" finished-at="2025-03-02T18:57:02 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@221dad51]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- testCases.PortfolioTest -->
+      <class name="testCases.SessionTest">
+        <test-method signature="openUp()[pri:0, instance:testCases.SessionTest@3578436e]" started-at="2025-03-02T18:55:03 IST" name="openUp" finished-at="2025-03-02T18:55:55 IST" duration-ms="52499" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openUp -->
+        <test-method is-config="true" signature="beforeMethod(org.testng.ITestContext)[pri:0, instance:testCases.SessionTest@3578436e]" started-at="2025-03-02T18:55:03 IST" name="beforeMethod" finished-at="2025-03-02T18:55:03 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@221dad51]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="beforeTest(org.testng.ITestContext)[pri:0, instance:testCases.SessionTest@3578436e]" started-at="2025-03-02T18:55:03 IST" name="beforeTest" finished-at="2025-03-02T18:55:03 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@221dad51]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestContext)[pri:0, instance:testCases.SessionTest@3578436e]" started-at="2025-03-02T18:55:55 IST" name="afterMethod" finished-at="2025-03-02T18:55:55 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@221dad51]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method signature="doLogin(org.testng.ITestContext)[pri:0, instance:testCases.SessionTest@3578436e]" started-at="2025-03-02T18:55:55 IST" name="doLogin" finished-at="2025-03-02T18:56:41 IST" duration-ms="45499" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@221dad51]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doLogin -->
+        <test-method is-config="true" signature="beforeMethod(org.testng.ITestContext)[pri:0, instance:testCases.SessionTest@3578436e]" started-at="2025-03-02T18:55:55 IST" name="beforeMethod" finished-at="2025-03-02T18:55:55 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@221dad51]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestContext)[pri:0, instance:testCases.SessionTest@3578436e]" started-at="2025-03-02T18:56:41 IST" name="afterMethod" finished-at="2025-03-02T18:56:41 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@221dad51]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterTest(org.testng.ITestContext)[pri:0, instance:testCases.SessionTest@3578436e]" started-at="2025-03-02T18:57:02 IST" name="afterTest" finished-at="2025-03-02T18:57:02 IST" duration-ms="361" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@221dad51]]>
               </value>
             </param>
           </params>
@@ -118,21 +606,21 @@
         </test-method> <!-- afterTest -->
       </class> <!-- testCases.SessionTest -->
     </test> <!-- Manage Portfolio Suite : Delete Portfolio Method 1 -->
-    <test started-at="2025-02-16T19:55:41 IST" name="Manage Portfolio Suite : Delete Portfolio Method 2" finished-at="2025-02-16T19:55:41 IST" duration-ms="3">
+    <test started-at="2025-03-02T18:57:02 IST" name="Manage Portfolio Suite : Delete Portfolio Method 2" finished-at="2025-03-02T18:57:02 IST" duration-ms="5">
       <class name="testCases.PortfolioTest">
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestContext)[pri:0, instance:testCases.PortfolioTest@6ec8211c]" started-at="2025-02-16T19:55:41 IST" name="afterMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1739715941107" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod(org.testng.ITestContext)[pri:0, instance:testCases.PortfolioTest@6ec8211c]" started-at="2025-02-16T19:55:41 IST" name="beforeMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1739715941107" status="SKIP">
+        <test-method is-config="true" signature="beforeMethod(org.testng.ITestContext)[pri:0, instance:testCases.PortfolioTest@5c072e3f]" started-at="2025-03-02T18:57:02 IST" name="beforeMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1740922022951" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="deletePortfolio(org.testng.ITestContext)[pri:0, instance:testCases.PortfolioTest@6ec8211c]" started-at="2025-02-16T19:55:41 IST" name="deletePortfolio" finished-at="2025-02-16T19:55:41 IST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestContext)[pri:0, instance:testCases.PortfolioTest@5c072e3f]" started-at="2025-03-02T18:57:02 IST" name="afterMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1740922022951" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method signature="deletePortfolio(org.testng.ITestContext)[pri:0, instance:testCases.PortfolioTest@5c072e3f]" started-at="2025-03-02T18:57:02 IST" name="deletePortfolio" finished-at="2025-03-02T18:57:02 IST" duration-ms="0" status="SKIP">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@6f8f8a80]]>
+                <![CDATA[org.testng.TestRunner@6e1b9411]]>
               </value>
             </param>
           </params>
@@ -141,11 +629,11 @@
         </test-method> <!-- deletePortfolio -->
       </class> <!-- testCases.PortfolioTest -->
       <class name="testCases.SessionTest">
-        <test-method is-config="true" signature="beforeTest(org.testng.ITestContext)[pri:0, instance:testCases.SessionTest@25bbf683]" started-at="2025-02-16T19:55:41 IST" name="beforeTest" finished-at="2025-02-16T19:55:41 IST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="beforeTest(org.testng.ITestContext)[pri:0, instance:testCases.SessionTest@47db50c5]" started-at="2025-03-02T18:57:02 IST" name="beforeTest" finished-at="2025-03-02T18:57:02 IST" duration-ms="2" status="SKIP">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@6f8f8a80]]>
+                <![CDATA[org.testng.TestRunner@6e1b9411]]>
               </value>
             </param>
           </params>
@@ -155,7 +643,7 @@
             </message>
             <full-stacktrace>
               <![CDATA[org.testng.SkipException: RunMode in Test Data is not True
-at testbase.BaseTest.beforeTest(BaseTest.java:67)
+at testbase.BaseTest.beforeTest(BaseTest.java:65)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -178,71 +666,144 @@ at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
 at org.testng.TestNG.runSuites(TestNG.java:1063)
 at org.testng.TestNG.run(TestNG.java:1031)
 at runner.TestNGRunner.run(TestNGRunner.java:32)
-at runner.JSONRunner.main(JSONRunner.java:128)
+at runner.JSONRunner.main(JSONRunner.java:134)
 ]]>
             </full-stacktrace>
           </exception> <!-- org.testng.SkipException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method signature="doLogin()[pri:0, instance:testCases.SessionTest@25bbf683]" started-at="2025-02-16T19:55:41 IST" name="doLogin" finished-at="2025-02-16T19:55:41 IST" duration-ms="0" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- doLogin -->
-        <test-method is-config="true" signature="beforeMethod(org.testng.ITestContext)[pri:0, instance:testCases.SessionTest@25bbf683]" started-at="2025-02-16T19:55:41 IST" name="beforeMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1739715941107" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="openUp()[pri:0, instance:testCases.SessionTest@25bbf683]" started-at="2025-02-16T19:55:41 IST" name="openUp" finished-at="2025-02-16T19:55:41 IST" duration-ms="0" status="SKIP">
+        <test-method signature="openUp()[pri:0, instance:testCases.SessionTest@47db50c5]" started-at="2025-03-02T18:57:02 IST" name="openUp" finished-at="2025-03-02T18:57:02 IST" duration-ms="0" status="SKIP">
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[RunMode in Test Data is not True]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: RunMode in Test Data is not True
+at testbase.BaseTest.beforeTest(BaseTest.java:65)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+at org.testng.TestRunner.run(TestRunner.java:589)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at runner.TestNGRunner.run(TestNGRunner.java:32)
+at runner.JSONRunner.main(JSONRunner.java:134)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openUp -->
-        <test-method is-config="true" signature="afterTest(org.testng.ITestContext)[pri:0, instance:testCases.SessionTest@25bbf683]" started-at="2025-02-16T19:55:41 IST" name="afterTest" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1739715941107" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterTest -->
-        <test-method is-config="true" signature="beforeMethod(org.testng.ITestContext)[pri:0, instance:testCases.SessionTest@25bbf683]" started-at="2025-02-16T19:55:41 IST" name="beforeMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1739715941107" status="SKIP">
+        <test-method is-config="true" signature="beforeMethod(org.testng.ITestContext)[pri:0, instance:testCases.SessionTest@47db50c5]" started-at="2025-03-02T18:57:02 IST" name="beforeMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1740922022948" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestContext)[pri:0, instance:testCases.SessionTest@25bbf683]" started-at="2025-02-16T19:55:41 IST" name="afterMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1739715941107" status="SKIP">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestContext)[pri:0, instance:testCases.SessionTest@47db50c5]" started-at="2025-03-02T18:57:02 IST" name="afterMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1740922022948" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestContext)[pri:0, instance:testCases.SessionTest@25bbf683]" started-at="2025-02-16T19:55:41 IST" name="afterMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1739715941107" status="SKIP">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestContext)[pri:0, instance:testCases.SessionTest@47db50c5]" started-at="2025-03-02T18:57:02 IST" name="afterMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1740922022950" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
+        <test-method signature="doLogin(org.testng.ITestContext)[pri:0, instance:testCases.SessionTest@47db50c5]" started-at="2025-03-02T18:57:02 IST" name="doLogin" finished-at="2025-03-02T18:57:02 IST" duration-ms="0" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@6e1b9411]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[RunMode in Test Data is not True]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: RunMode in Test Data is not True
+at testbase.BaseTest.beforeTest(BaseTest.java:65)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+at org.testng.TestRunner.run(TestRunner.java:589)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at runner.TestNGRunner.run(TestNGRunner.java:32)
+at runner.JSONRunner.main(JSONRunner.java:134)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doLogin -->
+        <test-method is-config="true" signature="beforeMethod(org.testng.ITestContext)[pri:0, instance:testCases.SessionTest@47db50c5]" started-at="2025-03-02T18:57:02 IST" name="beforeMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1740922022950" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="afterTest(org.testng.ITestContext)[pri:0, instance:testCases.SessionTest@47db50c5]" started-at="2025-03-02T18:57:02 IST" name="afterTest" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1740922022951" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
       </class> <!-- testCases.SessionTest -->
     </test> <!-- Manage Portfolio Suite : Delete Portfolio Method 2 -->
-    <test started-at="2025-02-16T19:55:41 IST" name="Manage Portfolio Suite : Delete Portfolio Method 3" finished-at="2025-02-16T19:55:41 IST" duration-ms="3">
+    <test started-at="2025-03-02T18:57:02 IST" name="Manage Portfolio Suite : Delete Portfolio Method 3" finished-at="2025-03-02T18:57:02 IST" duration-ms="20">
       <class name="testCases.PortfolioTest">
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestContext)[pri:0, instance:testCases.PortfolioTest@4524411f]" started-at="2025-02-16T19:55:41 IST" name="afterMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1739715941123" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod(org.testng.ITestContext)[pri:0, instance:testCases.PortfolioTest@4524411f]" started-at="2025-02-16T19:55:41 IST" name="beforeMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1739715941123" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="deletePortfolio(org.testng.ITestContext)[pri:0, instance:testCases.PortfolioTest@4524411f]" started-at="2025-02-16T19:55:41 IST" name="deletePortfolio" finished-at="2025-02-16T19:55:41 IST" duration-ms="0" status="SKIP">
+        <test-method signature="deletePortfolio(org.testng.ITestContext)[pri:0, instance:testCases.PortfolioTest@646007f4]" started-at="2025-03-02T18:57:02 IST" name="deletePortfolio" finished-at="2025-03-02T18:57:02 IST" duration-ms="0" status="SKIP">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@695a69a1]]>
+                <![CDATA[org.testng.TestRunner@7b78ed6a]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- deletePortfolio -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestContext)[pri:0, instance:testCases.PortfolioTest@646007f4]" started-at="2025-03-02T18:57:02 IST" name="afterMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1740922022971" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(org.testng.ITestContext)[pri:0, instance:testCases.PortfolioTest@646007f4]" started-at="2025-03-02T18:57:02 IST" name="beforeMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1740922022971" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
       </class> <!-- testCases.PortfolioTest -->
       <class name="testCases.SessionTest">
-        <test-method is-config="true" signature="beforeTest(org.testng.ITestContext)[pri:0, instance:testCases.SessionTest@150c158]" started-at="2025-02-16T19:55:41 IST" name="beforeTest" finished-at="2025-02-16T19:55:41 IST" duration-ms="3" status="SKIP">
+        <test-method is-config="true" signature="beforeTest(org.testng.ITestContext)[pri:0, instance:testCases.SessionTest@710726a3]" started-at="2025-03-02T18:57:02 IST" name="beforeTest" finished-at="2025-03-02T18:57:02 IST" duration-ms="16" status="SKIP">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@695a69a1]]>
+                <![CDATA[org.testng.TestRunner@7b78ed6a]]>
               </value>
             </param>
           </params>
@@ -252,7 +813,7 @@ at runner.JSONRunner.main(JSONRunner.java:128)
             </message>
             <full-stacktrace>
               <![CDATA[org.testng.SkipException: RunMode in Test Data is not True
-at testbase.BaseTest.beforeTest(BaseTest.java:67)
+at testbase.BaseTest.beforeTest(BaseTest.java:65)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -275,108 +836,1382 @@ at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
 at org.testng.TestNG.runSuites(TestNG.java:1063)
 at org.testng.TestNG.run(TestNG.java:1031)
 at runner.TestNGRunner.run(TestNGRunner.java:32)
-at runner.JSONRunner.main(JSONRunner.java:128)
+at runner.JSONRunner.main(JSONRunner.java:134)
 ]]>
             </full-stacktrace>
           </exception> <!-- org.testng.SkipException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method is-config="true" signature="beforeMethod(org.testng.ITestContext)[pri:0, instance:testCases.SessionTest@150c158]" started-at="2025-02-16T19:55:41 IST" name="beforeMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1739715941123" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method is-config="true" signature="afterTest(org.testng.ITestContext)[pri:0, instance:testCases.SessionTest@150c158]" started-at="2025-02-16T19:55:41 IST" name="afterTest" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1739715941123" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterTest -->
-        <test-method is-config="true" signature="beforeMethod(org.testng.ITestContext)[pri:0, instance:testCases.SessionTest@150c158]" started-at="2025-02-16T19:55:41 IST" name="beforeMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1739715941123" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestContext)[pri:0, instance:testCases.SessionTest@150c158]" started-at="2025-02-16T19:55:41 IST" name="afterMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1739715941123" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method signature="openUp()[pri:0, instance:testCases.SessionTest@150c158]" started-at="2025-02-16T19:55:41 IST" name="openUp" finished-at="2025-02-16T19:55:41 IST" duration-ms="0" status="SKIP">
-          <exception class="org.testng.SkipException">
-            <message>
-              <![CDATA[RunMode in Test Data is not True]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.SkipException: RunMode in Test Data is not True
-at testbase.BaseTest.beforeTest(BaseTest.java:67)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
-at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
-at org.testng.TestRunner.beforeRun(TestRunner.java:627)
-at org.testng.TestRunner.run(TestRunner.java:589)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at runner.TestNGRunner.run(TestNGRunner.java:32)
-at runner.JSONRunner.main(JSONRunner.java:128)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.SkipException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openUp -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestContext)[pri:0, instance:testCases.SessionTest@150c158]" started-at="2025-02-16T19:55:41 IST" name="afterMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1739715941123" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method signature="doLogin()[pri:0, instance:testCases.SessionTest@150c158]" started-at="2025-02-16T19:55:41 IST" name="doLogin" finished-at="2025-02-16T19:55:41 IST" duration-ms="0" status="SKIP">
-          <exception class="org.testng.SkipException">
-            <message>
-              <![CDATA[RunMode in Test Data is not True]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.SkipException: RunMode in Test Data is not True
-at testbase.BaseTest.beforeTest(BaseTest.java:67)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
-at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
-at org.testng.TestRunner.beforeRun(TestRunner.java:627)
-at org.testng.TestRunner.run(TestRunner.java:589)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at runner.TestNGRunner.run(TestNGRunner.java:32)
-at runner.JSONRunner.main(JSONRunner.java:128)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.SkipException -->
+        <test-method signature="doLogin(org.testng.ITestContext)[pri:0, instance:testCases.SessionTest@710726a3]" started-at="2025-03-02T18:57:02 IST" name="doLogin" finished-at="2025-03-02T18:57:02 IST" duration-ms="0" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@7b78ed6a]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- doLogin -->
+        <test-method is-config="true" signature="beforeMethod(org.testng.ITestContext)[pri:0, instance:testCases.SessionTest@710726a3]" started-at="2025-03-02T18:57:02 IST" name="beforeMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1740922022967" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestContext)[pri:0, instance:testCases.SessionTest@710726a3]" started-at="2025-03-02T18:57:02 IST" name="afterMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1740922022967" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method signature="openUp()[pri:0, instance:testCases.SessionTest@710726a3]" started-at="2025-03-02T18:57:02 IST" name="openUp" finished-at="2025-03-02T18:57:02 IST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openUp -->
+        <test-method is-config="true" signature="beforeMethod(org.testng.ITestContext)[pri:0, instance:testCases.SessionTest@710726a3]" started-at="2025-03-02T18:57:02 IST" name="beforeMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1740922022967" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestContext)[pri:0, instance:testCases.SessionTest@710726a3]" started-at="2025-03-02T18:57:02 IST" name="afterMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1740922022967" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterTest(org.testng.ITestContext)[pri:0, instance:testCases.SessionTest@710726a3]" started-at="2025-03-02T18:57:02 IST" name="afterTest" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1740922022971" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
       </class> <!-- testCases.SessionTest -->
     </test> <!-- Manage Portfolio Suite : Delete Portfolio Method 3 -->
   </suite> <!-- Manage Portfolio Suite -->
+  <suite started-at="2025-03-02T18:57:02 IST" name="Manage Stocks" finished-at="2025-03-02T19:13:01 IST" duration-ms="958104">
+    <groups>
+    </groups>
+    <test started-at="2025-03-02T18:57:02 IST" name="Manage Stocks : Add Stocks in Portfolio 1" finished-at="2025-03-02T19:00:01 IST" duration-ms="178772">
+      <class name="testCases.PortfolioTest">
+        <test-method is-config="true" signature="beforeMethod(org.testng.ITestContext)[pri:0, instance:testCases.PortfolioTest@5c18298f]" started-at="2025-03-02T18:58:06 IST" name="beforeMethod" finished-at="2025-03-02T18:58:06 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@468e8565]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="selectPortfolio(org.testng.ITestContext)[pri:0, instance:testCases.PortfolioTest@5c18298f]" started-at="2025-03-02T18:58:06 IST" name="selectPortfolio" finished-at="2025-03-02T18:58:28 IST" duration-ms="21887" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@468e8565]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectPortfolio -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestContext)[pri:0, instance:testCases.PortfolioTest@5c18298f]" started-at="2025-03-02T18:58:28 IST" name="afterMethod" finished-at="2025-03-02T18:58:28 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@468e8565]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- testCases.PortfolioTest -->
+      <class name="testCases.StockTest">
+        <test-method signature="addStock(org.testng.ITestContext)[pri:0, instance:testCases.StockTest@31f924f5]" started-at="2025-03-02T18:58:28 IST" name="addStock" finished-at="2025-03-02T18:58:50 IST" duration-ms="22157" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@468e8565]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
+            <message>
+              <![CDATA[stale element reference: stale element not found
+  (Session info: chrome=133.0.6943.142)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.28.1', revision: '73f5ad48a2'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a3eb690b0f8c8fb032aab28c65410d40, findChildElements {id=f.5FB6EDB83EC00B760B1365DF73DC2695.d.5B10AE9F8DCCF1C6F7013F648988192C.e.2242, value=td, using=tag name}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.142, chrome: {chromedriverVersion: 133.0.6943.141 (2a5d6da0d61..., userDataDir: C:\Users\ARNAB\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61202}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61202/devtoo..., se:cdpVersion: 133.0.6943.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a3eb690b0f8c8fb032aab28c65410d40]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+  (Session info: chrome=133.0.6943.142)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.28.1', revision: '73f5ad48a2'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a3eb690b0f8c8fb032aab28c65410d40, findChildElements {id=f.5FB6EDB83EC00B760B1365DF73DC2695.d.5B10AE9F8DCCF1C6F7013F648988192C.e.2242, value=td, using=tag name}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.142, chrome: {chromedriverVersion: 133.0.6943.141 (2a5d6da0d61..., userDataDir: C:\Users\ARNAB\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61202}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61202/devtoo..., se:cdpVersion: 133.0.6943.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a3eb690b0f8c8fb032aab28c65410d40
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElements(ElementLocation.java:182)
+at org.openqa.selenium.remote.ElementLocation.findElements(ElementLocation.java:103)
+at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:381)
+at org.openqa.selenium.remote.RemoteWebElement.findElements(RemoteWebElement.java:203)
+at Keywords.ApplicationKeywords.getRowNumWithCellData(ApplicationKeywords.java:98)
+at Keywords.ApplicationKeywords.findCurrentStockQuantity(ApplicationKeywords.java:81)
+at testCases.StockTest.addStock(StockTest.java:99)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at runner.TestNGRunner.run(TestNGRunner.java:32)
+at runner.JSONRunner.main(JSONRunner.java:134)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addStock -->
+        <test-method is-config="true" signature="beforeMethod(org.testng.ITestContext)[pri:0, instance:testCases.StockTest@31f924f5]" started-at="2025-03-02T18:58:28 IST" name="beforeMethod" finished-at="2025-03-02T18:58:28 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@468e8565]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="beforeMethod(org.testng.ITestContext)[pri:0, instance:testCases.StockTest@31f924f5]" started-at="2025-03-02T18:58:50 IST" name="beforeMethod" finished-at="2025-03-02T18:58:50 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@468e8565]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifyStockIsPresent(org.testng.ITestContext)[pri:0, instance:testCases.StockTest@31f924f5]" started-at="2025-03-02T18:58:50 IST" name="verifyStockIsPresent" finished-at="2025-03-02T18:59:20 IST" duration-ms="30170" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@468e8565]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyStockIsPresent -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestContext)[pri:0, instance:testCases.StockTest@31f924f5]" started-at="2025-03-02T18:58:50 IST" name="afterMethod" finished-at="2025-03-02T18:58:50 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@468e8565]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestContext)[pri:0, instance:testCases.StockTest@31f924f5]" started-at="2025-03-02T18:59:20 IST" name="afterMethod" finished-at="2025-03-02T18:59:20 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@468e8565]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(org.testng.ITestContext)[pri:0, instance:testCases.StockTest@31f924f5]" started-at="2025-03-02T18:59:20 IST" name="beforeMethod" finished-at="2025-03-02T18:59:20 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@468e8565]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifyTransactionHistory(java.lang.String,org.testng.ITestContext)[pri:0, instance:testCases.StockTest@31f924f5]" started-at="2025-03-02T18:59:20 IST" name="verifyTransactionHistory" finished-at="2025-03-02T19:00:01 IST" duration-ms="40600" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[addStock]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@468e8565]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTransactionHistory -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestContext)[pri:0, instance:testCases.StockTest@31f924f5]" started-at="2025-03-02T19:00:01 IST" name="afterMethod" finished-at="2025-03-02T19:00:01 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@468e8565]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- testCases.StockTest -->
+      <class name="testCases.SessionTest">
+        <test-method is-config="true" signature="beforeMethod(org.testng.ITestContext)[pri:0, instance:testCases.SessionTest@27d415d9]" started-at="2025-03-02T18:57:02 IST" name="beforeMethod" finished-at="2025-03-02T18:57:02 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@468e8565]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="openUp()[pri:0, instance:testCases.SessionTest@27d415d9]" started-at="2025-03-02T18:57:02 IST" name="openUp" finished-at="2025-03-02T18:57:31 IST" duration-ms="28652" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openUp -->
+        <test-method is-config="true" signature="beforeTest(org.testng.ITestContext)[pri:0, instance:testCases.SessionTest@27d415d9]" started-at="2025-03-02T18:57:02 IST" name="beforeTest" finished-at="2025-03-02T18:57:02 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@468e8565]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method signature="doLogin(org.testng.ITestContext)[pri:0, instance:testCases.SessionTest@27d415d9]" started-at="2025-03-02T18:57:31 IST" name="doLogin" finished-at="2025-03-02T18:58:06 IST" duration-ms="34923" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@468e8565]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doLogin -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestContext)[pri:0, instance:testCases.SessionTest@27d415d9]" started-at="2025-03-02T18:57:31 IST" name="afterMethod" finished-at="2025-03-02T18:57:31 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@468e8565]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(org.testng.ITestContext)[pri:0, instance:testCases.SessionTest@27d415d9]" started-at="2025-03-02T18:57:31 IST" name="beforeMethod" finished-at="2025-03-02T18:57:31 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@468e8565]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestContext)[pri:0, instance:testCases.SessionTest@27d415d9]" started-at="2025-03-02T18:58:06 IST" name="afterMethod" finished-at="2025-03-02T18:58:06 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@468e8565]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterTest(org.testng.ITestContext)[pri:0, instance:testCases.SessionTest@27d415d9]" started-at="2025-03-02T19:00:01 IST" name="afterTest" finished-at="2025-03-02T19:00:01 IST" duration-ms="377" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@468e8565]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- testCases.SessionTest -->
+    </test> <!-- Manage Stocks : Add Stocks in Portfolio 1 -->
+    <test started-at="2025-03-02T19:00:01 IST" name="Manage Stocks : Add Stocks in Portfolio 2" finished-at="2025-03-02T19:04:29 IST" duration-ms="268066">
+      <class name="testCases.PortfolioTest">
+        <test-method signature="selectPortfolio(org.testng.ITestContext)[pri:0, instance:testCases.PortfolioTest@2fd66ad3]" started-at="2025-03-02T19:01:50 IST" name="selectPortfolio" finished-at="2025-03-02T19:02:44 IST" duration-ms="53094" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@3c18942]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectPortfolio -->
+        <test-method is-config="true" signature="beforeMethod(org.testng.ITestContext)[pri:0, instance:testCases.PortfolioTest@2fd66ad3]" started-at="2025-03-02T19:01:50 IST" name="beforeMethod" finished-at="2025-03-02T19:01:50 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@3c18942]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestContext)[pri:0, instance:testCases.PortfolioTest@2fd66ad3]" started-at="2025-03-02T19:02:44 IST" name="afterMethod" finished-at="2025-03-02T19:02:44 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@3c18942]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- testCases.PortfolioTest -->
+      <class name="testCases.StockTest">
+        <test-method is-config="true" signature="beforeMethod(org.testng.ITestContext)[pri:0, instance:testCases.StockTest@5d11346a]" started-at="2025-03-02T19:02:44 IST" name="beforeMethod" finished-at="2025-03-02T19:02:44 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@3c18942]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="addStock(org.testng.ITestContext)[pri:0, instance:testCases.StockTest@5d11346a]" started-at="2025-03-02T19:02:44 IST" name="addStock" finished-at="2025-03-02T19:03:26 IST" duration-ms="42548" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@3c18942]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addStock -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestContext)[pri:0, instance:testCases.StockTest@5d11346a]" started-at="2025-03-02T19:03:26 IST" name="afterMethod" finished-at="2025-03-02T19:03:26 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@3c18942]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method signature="verifyStockIsPresent(org.testng.ITestContext)[pri:0, instance:testCases.StockTest@5d11346a]" started-at="2025-03-02T19:03:26 IST" name="verifyStockIsPresent" finished-at="2025-03-02T19:03:56 IST" duration-ms="30228" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@3c18942]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyStockIsPresent -->
+        <test-method is-config="true" signature="beforeMethod(org.testng.ITestContext)[pri:0, instance:testCases.StockTest@5d11346a]" started-at="2025-03-02T19:03:26 IST" name="beforeMethod" finished-at="2025-03-02T19:03:26 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@3c18942]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestContext)[pri:0, instance:testCases.StockTest@5d11346a]" started-at="2025-03-02T19:03:56 IST" name="afterMethod" finished-at="2025-03-02T19:03:56 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@3c18942]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(org.testng.ITestContext)[pri:0, instance:testCases.StockTest@5d11346a]" started-at="2025-03-02T19:03:56 IST" name="beforeMethod" finished-at="2025-03-02T19:03:56 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@3c18942]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifyTransactionHistory(java.lang.String,org.testng.ITestContext)[pri:0, instance:testCases.StockTest@5d11346a]" started-at="2025-03-02T19:03:56 IST" name="verifyTransactionHistory" finished-at="2025-03-02T19:04:29 IST" duration-ms="32489" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[addStock]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@3c18942]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTransactionHistory -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestContext)[pri:0, instance:testCases.StockTest@5d11346a]" started-at="2025-03-02T19:04:29 IST" name="afterMethod" finished-at="2025-03-02T19:04:29 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@3c18942]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- testCases.StockTest -->
+      <class name="testCases.SessionTest">
+        <test-method signature="openUp()[pri:0, instance:testCases.SessionTest@376b4233]" started-at="2025-03-02T19:00:01 IST" name="openUp" finished-at="2025-03-02T19:01:10 IST" duration-ms="69166" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openUp -->
+        <test-method is-config="true" signature="beforeMethod(org.testng.ITestContext)[pri:0, instance:testCases.SessionTest@376b4233]" started-at="2025-03-02T19:00:01 IST" name="beforeMethod" finished-at="2025-03-02T19:00:01 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@3c18942]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="beforeTest(org.testng.ITestContext)[pri:0, instance:testCases.SessionTest@376b4233]" started-at="2025-03-02T19:00:01 IST" name="beforeTest" finished-at="2025-03-02T19:00:01 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@3c18942]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method signature="doLogin(org.testng.ITestContext)[pri:0, instance:testCases.SessionTest@376b4233]" started-at="2025-03-02T19:01:10 IST" name="doLogin" finished-at="2025-03-02T19:01:50 IST" duration-ms="40000" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@3c18942]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doLogin -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestContext)[pri:0, instance:testCases.SessionTest@376b4233]" started-at="2025-03-02T19:01:10 IST" name="afterMethod" finished-at="2025-03-02T19:01:10 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@3c18942]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(org.testng.ITestContext)[pri:0, instance:testCases.SessionTest@376b4233]" started-at="2025-03-02T19:01:10 IST" name="beforeMethod" finished-at="2025-03-02T19:01:10 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@3c18942]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestContext)[pri:0, instance:testCases.SessionTest@376b4233]" started-at="2025-03-02T19:01:50 IST" name="afterMethod" finished-at="2025-03-02T19:01:50 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@3c18942]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterTest(org.testng.ITestContext)[pri:0, instance:testCases.SessionTest@376b4233]" started-at="2025-03-02T19:04:29 IST" name="afterTest" finished-at="2025-03-02T19:04:29 IST" duration-ms="541" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@3c18942]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- testCases.SessionTest -->
+    </test> <!-- Manage Stocks : Add Stocks in Portfolio 2 -->
+    <test started-at="2025-03-02T19:04:29 IST" name="Manage Stocks : Sell Stocks in Portfolio 1" finished-at="2025-03-02T19:09:37 IST" duration-ms="307349">
+      <class name="testCases.PortfolioTest">
+        <test-method signature="selectPortfolio(org.testng.ITestContext)[pri:0, instance:testCases.PortfolioTest@10d59286]" started-at="2025-03-02T19:06:20 IST" name="selectPortfolio" finished-at="2025-03-02T19:06:58 IST" duration-ms="38361" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@5f935d49]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectPortfolio -->
+        <test-method is-config="true" signature="beforeMethod(org.testng.ITestContext)[pri:0, instance:testCases.PortfolioTest@10d59286]" started-at="2025-03-02T19:06:20 IST" name="beforeMethod" finished-at="2025-03-02T19:06:20 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@5f935d49]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestContext)[pri:0, instance:testCases.PortfolioTest@10d59286]" started-at="2025-03-02T19:06:58 IST" name="afterMethod" finished-at="2025-03-02T19:06:58 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@5f935d49]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- testCases.PortfolioTest -->
+      <class name="testCases.StockTest">
+        <test-method is-config="true" signature="beforeMethod(org.testng.ITestContext)[pri:0, instance:testCases.StockTest@fe18270]" started-at="2025-03-02T19:06:58 IST" name="beforeMethod" finished-at="2025-03-02T19:06:58 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@5f935d49]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifyStockIsPresent(org.testng.ITestContext)[pri:0, instance:testCases.StockTest@fe18270]" started-at="2025-03-02T19:06:58 IST" name="verifyStockIsPresent" finished-at="2025-03-02T19:07:28 IST" duration-ms="30159" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@5f935d49]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyStockIsPresent -->
+        <test-method signature="modifyStock(java.lang.String,org.testng.ITestContext)[pri:0, instance:testCases.StockTest@fe18270]" started-at="2025-03-02T19:07:28 IST" name="modifyStock" finished-at="2025-03-02T19:08:46 IST" duration-ms="77596" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[sellStock]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@5f935d49]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- modifyStock -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestContext)[pri:0, instance:testCases.StockTest@fe18270]" started-at="2025-03-02T19:07:28 IST" name="afterMethod" finished-at="2025-03-02T19:07:28 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@5f935d49]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(org.testng.ITestContext)[pri:0, instance:testCases.StockTest@fe18270]" started-at="2025-03-02T19:07:28 IST" name="beforeMethod" finished-at="2025-03-02T19:07:28 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@5f935d49]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestContext)[pri:0, instance:testCases.StockTest@fe18270]" started-at="2025-03-02T19:08:46 IST" name="afterMethod" finished-at="2025-03-02T19:08:46 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@5f935d49]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(org.testng.ITestContext)[pri:0, instance:testCases.StockTest@fe18270]" started-at="2025-03-02T19:08:46 IST" name="beforeMethod" finished-at="2025-03-02T19:08:46 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@5f935d49]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifyStockQuantity(java.lang.String,org.testng.ITestContext)[pri:0, instance:testCases.StockTest@fe18270]" started-at="2025-03-02T19:08:46 IST" name="verifyStockQuantity" finished-at="2025-03-02T19:09:16 IST" duration-ms="30167" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[sellStock]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@5f935d49]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyStockQuantity -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestContext)[pri:0, instance:testCases.StockTest@fe18270]" started-at="2025-03-02T19:09:16 IST" name="afterMethod" finished-at="2025-03-02T19:09:16 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@5f935d49]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(org.testng.ITestContext)[pri:0, instance:testCases.StockTest@fe18270]" started-at="2025-03-02T19:09:16 IST" name="beforeMethod" finished-at="2025-03-02T19:09:16 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@5f935d49]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifyTransactionHistory(java.lang.String,org.testng.ITestContext)[pri:0, instance:testCases.StockTest@fe18270]" started-at="2025-03-02T19:09:16 IST" name="verifyTransactionHistory" finished-at="2025-03-02T19:09:36 IST" duration-ms="20091" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[sellStock]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@5f935d49]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
+            <message>
+              <![CDATA[stale element reference: stale element not found
+  (Session info: chrome=133.0.6943.142)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.28.1', revision: '73f5ad48a2'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1b84e0e37eee94c8cf88bb084dcb2ebd, findChildElements {id=f.64DEAD794332876D58A578BC4E7B1D25.d.0695D75C96B8D3FBA042858E70ADB18C.e.2391, value=td, using=tag name}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.142, chrome: {chromedriverVersion: 133.0.6943.141 (2a5d6da0d61..., userDataDir: C:\Users\ARNAB\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61652}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61652/devtoo..., se:cdpVersion: 133.0.6943.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1b84e0e37eee94c8cf88bb084dcb2ebd]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+  (Session info: chrome=133.0.6943.142)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.28.1', revision: '73f5ad48a2'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1b84e0e37eee94c8cf88bb084dcb2ebd, findChildElements {id=f.64DEAD794332876D58A578BC4E7B1D25.d.0695D75C96B8D3FBA042858E70ADB18C.e.2391, value=td, using=tag name}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.142, chrome: {chromedriverVersion: 133.0.6943.141 (2a5d6da0d61..., userDataDir: C:\Users\ARNAB\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61652}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61652/devtoo..., se:cdpVersion: 133.0.6943.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1b84e0e37eee94c8cf88bb084dcb2ebd
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElements(ElementLocation.java:182)
+at org.openqa.selenium.remote.ElementLocation.findElements(ElementLocation.java:103)
+at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:381)
+at org.openqa.selenium.remote.RemoteWebElement.findElements(RemoteWebElement.java:203)
+at Keywords.ApplicationKeywords.getRowNumWithCellData(ApplicationKeywords.java:98)
+at Keywords.ApplicationKeywords.openTrasactionHistory(ApplicationKeywords.java:69)
+at testCases.StockTest.verifyTransactionHistory(StockTest.java:125)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at runner.TestNGRunner.run(TestNGRunner.java:32)
+at runner.JSONRunner.main(JSONRunner.java:134)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTransactionHistory -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestContext)[pri:0, instance:testCases.StockTest@fe18270]" started-at="2025-03-02T19:09:36 IST" name="afterMethod" finished-at="2025-03-02T19:09:36 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@5f935d49]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- testCases.StockTest -->
+      <class name="testCases.SessionTest">
+        <test-method is-config="true" signature="beforeTest(org.testng.ITestContext)[pri:0, instance:testCases.SessionTest@5fdba6f9]" started-at="2025-03-02T19:04:29 IST" name="beforeTest" finished-at="2025-03-02T19:04:29 IST" duration-ms="12" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@5f935d49]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method is-config="true" signature="beforeMethod(org.testng.ITestContext)[pri:0, instance:testCases.SessionTest@5fdba6f9]" started-at="2025-03-02T19:04:29 IST" name="beforeMethod" finished-at="2025-03-02T19:04:29 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@5f935d49]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="openUp()[pri:0, instance:testCases.SessionTest@5fdba6f9]" started-at="2025-03-02T19:04:29 IST" name="openUp" finished-at="2025-03-02T19:05:30 IST" duration-ms="60940" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openUp -->
+        <test-method signature="doLogin(org.testng.ITestContext)[pri:0, instance:testCases.SessionTest@5fdba6f9]" started-at="2025-03-02T19:05:30 IST" name="doLogin" finished-at="2025-03-02T19:06:20 IST" duration-ms="49669" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@5f935d49]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doLogin -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestContext)[pri:0, instance:testCases.SessionTest@5fdba6f9]" started-at="2025-03-02T19:05:30 IST" name="afterMethod" finished-at="2025-03-02T19:05:30 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@5f935d49]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(org.testng.ITestContext)[pri:0, instance:testCases.SessionTest@5fdba6f9]" started-at="2025-03-02T19:05:30 IST" name="beforeMethod" finished-at="2025-03-02T19:05:30 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@5f935d49]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestContext)[pri:0, instance:testCases.SessionTest@5fdba6f9]" started-at="2025-03-02T19:06:20 IST" name="afterMethod" finished-at="2025-03-02T19:06:20 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@5f935d49]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterTest(org.testng.ITestContext)[pri:0, instance:testCases.SessionTest@5fdba6f9]" started-at="2025-03-02T19:09:36 IST" name="afterTest" finished-at="2025-03-02T19:09:37 IST" duration-ms="349" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@5f935d49]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- testCases.SessionTest -->
+    </test> <!-- Manage Stocks : Sell Stocks in Portfolio 1 -->
+    <test started-at="2025-03-02T19:09:37 IST" name="Manage Stocks : Add Stocks in existying Company in Portfolio 1" finished-at="2025-03-02T19:13:01 IST" duration-ms="203884">
+      <class name="testCases.PortfolioTest">
+        <test-method is-config="true" signature="beforeMethod(org.testng.ITestContext)[pri:0, instance:testCases.PortfolioTest@3b94d659]" started-at="2025-03-02T19:10:13 IST" name="beforeMethod" finished-at="2025-03-02T19:10:13 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@73ddb7ef]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="selectPortfolio(org.testng.ITestContext)[pri:0, instance:testCases.PortfolioTest@3b94d659]" started-at="2025-03-02T19:10:13 IST" name="selectPortfolio" finished-at="2025-03-02T19:10:19 IST" duration-ms="6863" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@73ddb7ef]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectPortfolio -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestContext)[pri:0, instance:testCases.PortfolioTest@3b94d659]" started-at="2025-03-02T19:10:19 IST" name="afterMethod" finished-at="2025-03-02T19:10:19 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@73ddb7ef]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- testCases.PortfolioTest -->
+      <class name="testCases.StockTest">
+        <test-method signature="verifyStockIsPresent(org.testng.ITestContext)[pri:0, instance:testCases.StockTest@24b1d79b]" started-at="2025-03-02T19:10:19 IST" name="verifyStockIsPresent" finished-at="2025-03-02T19:10:50 IST" duration-ms="30098" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@73ddb7ef]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyStockIsPresent -->
+        <test-method is-config="true" signature="beforeMethod(org.testng.ITestContext)[pri:0, instance:testCases.StockTest@24b1d79b]" started-at="2025-03-02T19:10:19 IST" name="beforeMethod" finished-at="2025-03-02T19:10:19 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@73ddb7ef]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="modifyStock(java.lang.String,org.testng.ITestContext)[pri:0, instance:testCases.StockTest@24b1d79b]" started-at="2025-03-02T19:10:50 IST" name="modifyStock" finished-at="2025-03-02T19:11:58 IST" duration-ms="68080" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[addStock]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@73ddb7ef]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- modifyStock -->
+        <test-method is-config="true" signature="beforeMethod(org.testng.ITestContext)[pri:0, instance:testCases.StockTest@24b1d79b]" started-at="2025-03-02T19:10:50 IST" name="beforeMethod" finished-at="2025-03-02T19:10:50 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@73ddb7ef]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestContext)[pri:0, instance:testCases.StockTest@24b1d79b]" started-at="2025-03-02T19:10:50 IST" name="afterMethod" finished-at="2025-03-02T19:10:50 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@73ddb7ef]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestContext)[pri:0, instance:testCases.StockTest@24b1d79b]" started-at="2025-03-02T19:11:58 IST" name="afterMethod" finished-at="2025-03-02T19:11:58 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@73ddb7ef]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method signature="verifyStockQuantity(java.lang.String,org.testng.ITestContext)[pri:0, instance:testCases.StockTest@24b1d79b]" started-at="2025-03-02T19:11:58 IST" name="verifyStockQuantity" finished-at="2025-03-02T19:12:28 IST" duration-ms="30167" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[addStock]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@73ddb7ef]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyStockQuantity -->
+        <test-method is-config="true" signature="beforeMethod(org.testng.ITestContext)[pri:0, instance:testCases.StockTest@24b1d79b]" started-at="2025-03-02T19:11:58 IST" name="beforeMethod" finished-at="2025-03-02T19:11:58 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@73ddb7ef]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifyTransactionHistory(java.lang.String,org.testng.ITestContext)[pri:0, instance:testCases.StockTest@24b1d79b]" started-at="2025-03-02T19:12:28 IST" name="verifyTransactionHistory" finished-at="2025-03-02T19:13:00 IST" duration-ms="32417" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[addStock]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@73ddb7ef]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTransactionHistory -->
+        <test-method is-config="true" signature="beforeMethod(org.testng.ITestContext)[pri:0, instance:testCases.StockTest@24b1d79b]" started-at="2025-03-02T19:12:28 IST" name="beforeMethod" finished-at="2025-03-02T19:12:28 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@73ddb7ef]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestContext)[pri:0, instance:testCases.StockTest@24b1d79b]" started-at="2025-03-02T19:12:28 IST" name="afterMethod" finished-at="2025-03-02T19:12:28 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@73ddb7ef]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestContext)[pri:0, instance:testCases.StockTest@24b1d79b]" started-at="2025-03-02T19:13:00 IST" name="afterMethod" finished-at="2025-03-02T19:13:00 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@73ddb7ef]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- testCases.StockTest -->
+      <class name="testCases.SessionTest">
+        <test-method is-config="true" signature="beforeTest(org.testng.ITestContext)[pri:0, instance:testCases.SessionTest@52525845]" started-at="2025-03-02T19:09:37 IST" name="beforeTest" finished-at="2025-03-02T19:09:37 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@73ddb7ef]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method is-config="true" signature="beforeMethod(org.testng.ITestContext)[pri:0, instance:testCases.SessionTest@52525845]" started-at="2025-03-02T19:09:37 IST" name="beforeMethod" finished-at="2025-03-02T19:09:37 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@73ddb7ef]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="openUp()[pri:0, instance:testCases.SessionTest@52525845]" started-at="2025-03-02T19:09:37 IST" name="openUp" finished-at="2025-03-02T19:09:41 IST" duration-ms="3978" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openUp -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestContext)[pri:0, instance:testCases.SessionTest@52525845]" started-at="2025-03-02T19:09:41 IST" name="afterMethod" finished-at="2025-03-02T19:09:41 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@73ddb7ef]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method signature="doLogin(org.testng.ITestContext)[pri:0, instance:testCases.SessionTest@52525845]" started-at="2025-03-02T19:09:41 IST" name="doLogin" finished-at="2025-03-02T19:10:13 IST" duration-ms="31917" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@73ddb7ef]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doLogin -->
+        <test-method is-config="true" signature="beforeMethod(org.testng.ITestContext)[pri:0, instance:testCases.SessionTest@52525845]" started-at="2025-03-02T19:09:41 IST" name="beforeMethod" finished-at="2025-03-02T19:09:41 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@73ddb7ef]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestContext)[pri:0, instance:testCases.SessionTest@52525845]" started-at="2025-03-02T19:10:13 IST" name="afterMethod" finished-at="2025-03-02T19:10:13 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@73ddb7ef]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterTest(org.testng.ITestContext)[pri:0, instance:testCases.SessionTest@52525845]" started-at="2025-03-02T19:13:00 IST" name="afterTest" finished-at="2025-03-02T19:13:01 IST" duration-ms="361" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@73ddb7ef]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- testCases.SessionTest -->
+    </test> <!-- Manage Stocks : Add Stocks in existying Company in Portfolio 1 -->
+    <test started-at="2025-03-02T19:13:01 IST" name="Manage Stocks : Add Stocks in existying Company in Portfolio 2" finished-at="2025-03-02T19:13:01 IST" duration-ms="5">
+      <class name="testCases.PortfolioTest">
+        <test-method signature="selectPortfolio(org.testng.ITestContext)[pri:0, instance:testCases.PortfolioTest@103f852]" started-at="2025-03-02T19:13:01 IST" name="selectPortfolio" finished-at="2025-03-02T19:13:01 IST" duration-ms="0" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@48692405]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectPortfolio -->
+        <test-method is-config="true" signature="beforeMethod(org.testng.ITestContext)[pri:0, instance:testCases.PortfolioTest@103f852]" started-at="2025-03-02T19:13:01 IST" name="beforeMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1740922981077" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestContext)[pri:0, instance:testCases.PortfolioTest@103f852]" started-at="2025-03-02T19:13:01 IST" name="afterMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1740922981077" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- testCases.PortfolioTest -->
+      <class name="testCases.StockTest">
+        <test-method is-config="true" signature="beforeMethod(org.testng.ITestContext)[pri:0, instance:testCases.StockTest@587c290d]" started-at="2025-03-02T19:13:01 IST" name="beforeMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1740922981077" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifyTransactionHistory(java.lang.String,org.testng.ITestContext)[pri:0, instance:testCases.StockTest@587c290d]" started-at="2025-03-02T19:13:01 IST" name="verifyTransactionHistory" finished-at="2025-03-02T19:13:01 IST" duration-ms="0" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[addStock]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@48692405]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTransactionHistory -->
+        <test-method is-config="true" signature="beforeMethod(org.testng.ITestContext)[pri:0, instance:testCases.StockTest@587c290d]" started-at="2025-03-02T19:13:01 IST" name="beforeMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1740922981077" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="beforeMethod(org.testng.ITestContext)[pri:0, instance:testCases.StockTest@587c290d]" started-at="2025-03-02T19:13:01 IST" name="beforeMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1740922981077" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="beforeMethod(org.testng.ITestContext)[pri:0, instance:testCases.StockTest@587c290d]" started-at="2025-03-02T19:13:01 IST" name="beforeMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1740922981077" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestContext)[pri:0, instance:testCases.StockTest@587c290d]" started-at="2025-03-02T19:13:01 IST" name="afterMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1740922981077" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method signature="modifyStock(java.lang.String,org.testng.ITestContext)[pri:0, instance:testCases.StockTest@587c290d]" started-at="2025-03-02T19:13:01 IST" name="modifyStock" finished-at="2025-03-02T19:13:01 IST" duration-ms="0" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[addStock]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@48692405]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- modifyStock -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestContext)[pri:0, instance:testCases.StockTest@587c290d]" started-at="2025-03-02T19:13:01 IST" name="afterMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1740922981077" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method signature="verifyStockQuantity(java.lang.String,org.testng.ITestContext)[pri:0, instance:testCases.StockTest@587c290d]" started-at="2025-03-02T19:13:01 IST" name="verifyStockQuantity" finished-at="2025-03-02T19:13:01 IST" duration-ms="0" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[addStock]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@48692405]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyStockQuantity -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestContext)[pri:0, instance:testCases.StockTest@587c290d]" started-at="2025-03-02T19:13:01 IST" name="afterMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1740922981077" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestContext)[pri:0, instance:testCases.StockTest@587c290d]" started-at="2025-03-02T19:13:01 IST" name="afterMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1740922981077" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method signature="verifyStockIsPresent(org.testng.ITestContext)[pri:0, instance:testCases.StockTest@587c290d]" started-at="2025-03-02T19:13:01 IST" name="verifyStockIsPresent" finished-at="2025-03-02T19:13:01 IST" duration-ms="0" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@48692405]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyStockIsPresent -->
+      </class> <!-- testCases.StockTest -->
+      <class name="testCases.SessionTest">
+        <test-method is-config="true" signature="beforeTest(org.testng.ITestContext)[pri:0, instance:testCases.SessionTest@1f021e6c]" started-at="2025-03-02T19:13:01 IST" name="beforeTest" finished-at="2025-03-02T19:13:01 IST" duration-ms="5" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@48692405]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[RunMode in Test Data is not True]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: RunMode in Test Data is not True
+at testbase.BaseTest.beforeTest(BaseTest.java:65)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+at org.testng.TestRunner.run(TestRunner.java:589)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at runner.TestNGRunner.run(TestNGRunner.java:32)
+at runner.JSONRunner.main(JSONRunner.java:134)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method is-config="true" signature="beforeMethod(org.testng.ITestContext)[pri:0, instance:testCases.SessionTest@1f021e6c]" started-at="2025-03-02T19:13:01 IST" name="beforeMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1740922981077" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestContext)[pri:0, instance:testCases.SessionTest@1f021e6c]" started-at="2025-03-02T19:13:01 IST" name="afterMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1740922981077" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method signature="doLogin(org.testng.ITestContext)[pri:0, instance:testCases.SessionTest@1f021e6c]" started-at="2025-03-02T19:13:01 IST" name="doLogin" finished-at="2025-03-02T19:13:01 IST" duration-ms="0" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@48692405]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doLogin -->
+        <test-method is-config="true" signature="afterTest(org.testng.ITestContext)[pri:0, instance:testCases.SessionTest@1f021e6c]" started-at="2025-03-02T19:13:01 IST" name="afterTest" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1740922981077" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method is-config="true" signature="beforeMethod(org.testng.ITestContext)[pri:0, instance:testCases.SessionTest@1f021e6c]" started-at="2025-03-02T19:13:01 IST" name="beforeMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1740922981077" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="openUp()[pri:0, instance:testCases.SessionTest@1f021e6c]" started-at="2025-03-02T19:13:01 IST" name="openUp" finished-at="2025-03-02T19:13:01 IST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openUp -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestContext)[pri:0, instance:testCases.SessionTest@1f021e6c]" started-at="2025-03-02T19:13:01 IST" name="afterMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1740922981077" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- testCases.SessionTest -->
+    </test> <!-- Manage Stocks : Add Stocks in existying Company in Portfolio 2 -->
+  </suite> <!-- Manage Stocks -->
 </testng-results>

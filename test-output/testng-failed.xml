@@ -1,23 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Manage Portfolio Suite]">
-  <listeners>
-    <listener class-name="listner.MyTestngListner"/>
-  </listeners>
-  <test thread-count="5" name="Manage Portfolio Suite : Delete Portfolio Method 2(failed)">
+<suite name="Failed suite [Manage Stocks]">
+  <test thread-count="5" name="Manage Stocks : Add Stocks in Portfolio 1(failed)">
+    <parameter name="password" value="Rediff#098"/>
+    <parameter name="dataSetID" value="0"/>
+    <parameter name="action" value="addStock"/>
+    <parameter name="testdatajsonfile" value="G:\Automation Project\rediffMoneyAutomation\src\test\resources\projectJSONs\testJSONData\stocksData.json"/>
+    <parameter name="userName" value="arnab1712@rediffmail.com"/>
+    <parameter name="dataflag" value="addfreshstock"/>
+    <parameter name="suiteName" value="Manage Stocks"/>
+    <classes>
+      <class name="testCases.StockTest">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="afterTest"/>
+          <include name="addStock" invocation-numbers="0"/>
+          <include name="beforeTest"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- testCases.StockTest -->
+    </classes>
+  </test> <!-- Manage Stocks : Add Stocks in Portfolio 1(failed) -->
+  <test thread-count="5" name="Manage Stocks : Sell Stocks in Portfolio 1(failed)">
+    <parameter name="password" value="Rediff#098"/>
+    <parameter name="dataSetID" value="0"/>
+    <parameter name="action" value="sellStock"/>
+    <parameter name="testdatajsonfile" value="G:\Automation Project\rediffMoneyAutomation\src\test\resources\projectJSONs\testJSONData\stocksData.json"/>
+    <parameter name="userName" value="arnab1712@rediffmail.com"/>
+    <parameter name="dataflag" value="sellexistingstock"/>
+    <parameter name="suiteName" value="Manage Stocks"/>
+    <classes>
+      <class name="testCases.StockTest">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
+          <include name="afterMethod"/>
+          <include name="verifyTransactionHistory" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- testCases.StockTest -->
+    </classes>
+  </test> <!-- Manage Stocks : Sell Stocks in Portfolio 1(failed) -->
+  <test thread-count="5" name="Manage Stocks : Add Stocks in existying Company in Portfolio 2(failed)">
+    <parameter name="password" value="Rediff#098"/>
     <parameter name="dataSetID" value="1"/>
     <parameter name="action" value="addStock"/>
-    <parameter name="testdatajsonfile" value="G:\Automation Project\rediffMoneyAutomation\src\test\resources\projectJSONs\testJSONData\portfolioData.json"/>
-    <parameter name="dataflag" value="deletenewportfolio"/>
-    <parameter name="suiteName" value="Manage Portfolio Suite"/>
+    <parameter name="testdatajsonfile" value="G:\Automation Project\rediffMoneyAutomation\src\test\resources\projectJSONs\testJSONData\stocksData.json"/>
+    <parameter name="userName" value="arnab1712@rediffmail.com"/>
+    <parameter name="dataflag" value="addexistingstock"/>
+    <parameter name="suiteName" value="Manage Stocks"/>
     <classes>
       <class name="testCases.PortfolioTest">
         <methods>
           <include name="beforeMethod"/>
           <include name="afterTest"/>
+          <include name="selectPortfolio"/>
           <include name="beforeTest"/>
           <include name="afterMethod"/>
-          <include name="deletePortfolio"/>
         </methods>
       </class> <!-- testCases.PortfolioTest -->
       <class name="testCases.SessionTest">
@@ -30,34 +69,18 @@
           <include name="openUp"/>
         </methods>
       </class> <!-- testCases.SessionTest -->
-    </classes>
-  </test> <!-- Manage Portfolio Suite : Delete Portfolio Method 2(failed) -->
-  <test thread-count="5" name="Manage Portfolio Suite : Delete Portfolio Method 3(failed)">
-    <parameter name="dataSetID" value="2"/>
-    <parameter name="action" value="addStock"/>
-    <parameter name="testdatajsonfile" value="G:\Automation Project\rediffMoneyAutomation\src\test\resources\projectJSONs\testJSONData\portfolioData.json"/>
-    <parameter name="dataflag" value="deletenewportfolio"/>
-    <parameter name="suiteName" value="Manage Portfolio Suite"/>
-    <classes>
-      <class name="testCases.PortfolioTest">
+      <class name="testCases.StockTest">
         <methods>
           <include name="beforeMethod"/>
+          <include name="modifyStock"/>
+          <include name="verifyStockIsPresent"/>
+          <include name="verifyStockQuantity"/>
           <include name="afterTest"/>
           <include name="beforeTest"/>
           <include name="afterMethod"/>
-          <include name="deletePortfolio"/>
+          <include name="verifyTransactionHistory"/>
         </methods>
-      </class> <!-- testCases.PortfolioTest -->
-      <class name="testCases.SessionTest">
-        <methods>
-          <include name="beforeMethod"/>
-          <include name="afterTest"/>
-          <include name="doLogin"/>
-          <include name="beforeTest"/>
-          <include name="afterMethod"/>
-          <include name="openUp"/>
-        </methods>
-      </class> <!-- testCases.SessionTest -->
+      </class> <!-- testCases.StockTest -->
     </classes>
-  </test> <!-- Manage Portfolio Suite : Delete Portfolio Method 3(failed) -->
-</suite> <!-- Failed suite [Manage Portfolio Suite] -->
+  </test> <!-- Manage Stocks : Add Stocks in existying Company in Portfolio 2(failed) -->
+</suite> <!-- Failed suite [Manage Stocks] -->
