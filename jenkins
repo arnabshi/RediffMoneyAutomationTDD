@@ -1,0 +1,38 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Checkout Code') {
+            steps {
+                echo "🔄 Checking out code..."
+                git branch: 'master', url: 'https://github.com/arnabshi/RediffMoneyAutomationTDD.git'
+            }
+        }
+
+        stage('Build & Compile') {
+            steps {
+                echo "🔧 Running mvn clean test-compile..."
+                sh 'mvn clean test-compile'
+            }
+        }
+
+        stage('Run Tests') {
+            steps {
+                echo "🚀 Running tests using exec:java (JSONRunner)..."
+                sh 'mvn exec:java'
+            }
+        }
+    }
+
+    post {
+        success {
+            echo "✅ Tests passed successfully!"
+        }
+        failure {
+            echo "❌ Tests failed!"
+        }
+        always {
+            echo "📬 Pipeline completed (success or failure)."
+        }
+    }
+}

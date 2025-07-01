@@ -13,40 +13,19 @@
           <include name="doLogin"/>
           <include name="beforeTest"/>
           <include name="afterMethod"/>
+          <include name="beforeSuite"/>
         </methods>
       </class> <!-- testCases.SessionTest -->
       <class name="testCases.PortfolioTest">
         <methods>
           <include name="beforeMethod"/>
           <include name="afterTest"/>
-          <include name="createPortfolio" invocation-numbers="0"/>
+          <include name="createPortfolio"/>
           <include name="beforeTest"/>
           <include name="afterMethod"/>
+          <include name="beforeSuite"/>
         </methods>
       </class> <!-- testCases.PortfolioTest -->
     </classes>
   </test> <!-- Create Portfolio Test(failed) -->
-  <test thread-count="5" name="Delete Portfolio Test(failed)">
-    <classes>
-      <class name="testCases.SessionTest">
-        <methods>
-          <include name="beforeMethod"/>
-          <include name="afterTest"/>
-          <include name="doLogout2"/>
-          <include name="doLogin"/>
-          <include name="beforeTest"/>
-          <include name="afterMethod"/>
-        </methods>
-      </class> <!-- testCases.SessionTest -->
-      <class name="testCases.PortfolioTest">
-        <methods>
-          <include name="beforeMethod"/>
-          <include name="afterTest"/>
-          <include name="beforeTest"/>
-          <include name="afterMethod"/>
-          <include name="deletePortfolio" invocation-numbers="0"/>
-        </methods>
-      </class> <!-- testCases.PortfolioTest -->
-    </classes>
-  </test> <!-- Delete Portfolio Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

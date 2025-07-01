@@ -1,13 +1,17 @@
 package Keywords;
 
 import java.time.Duration;
+import java.util.List;
+import java.util.NoSuchElementException;
 
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class ActionKeywords extends GenericKeywords {
+	
 	public void click(String locatorKey) {
 		logInfo("Perform click : " + prop.getProperty(locatorKey));
 //        try{
@@ -37,10 +41,20 @@ public class ActionKeywords extends GenericKeywords {
 	}
 
 	public void selectByVisibleText(String locatorKey, String value) {
-		logInfo("Select Text : " + value);
-		Select dropDown = new Select(getElement(locatorKey));
-		dropDown.selectByVisibleText(value);
-
+		logInfo("Selecting Text : " + value);
+		WebElement element=getElement(locatorKey);
+		element.click();
+		Select dropDown = new Select(element);
+		List<WebElement> options=dropDown.getOptions();
+		for(WebElement wb:options){
+			logInfo("available options to select - "+ wb.getText());
+		}
+		try {
+			dropDown.selectByValue(value);
+		}
+		catch(Exception e){
+			throw new NoSuchElementException("not able to select - " +value+e.getMessage());
+		}
 	}
 
 	public void acceptAlert() {

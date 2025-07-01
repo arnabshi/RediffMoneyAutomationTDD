@@ -5,24 +5,26 @@
 	],
 	"parallelsuites": "1",
 	"credential": {
-		"userName": "****",
-		"password": "****"
+		"userName": "arnab1712@rediffmail.com",
+		"password": "Rediff#098"
 	},
 	"testsuites": [
 		{
 			"name": "Manage Portfolio Suite",
 			"runmode": "Yes",
 			"paralleltests": "No",
+			"testdatafrom":"Excel",
 			"testdatajsonfile": "testJSONData\\portfolioData.json",
-			"testdataxlsfile": "",
+			"testdataxlsfile": "XLS_Data\\TestExcelData.xlsx",
 			"suitefilename": "suites\\portfoliosuite.json"
 		},
 		{
 			"name": "Manage Stocks",
-			"runmode": "Yes",
+			"runmode": "No",
 			"paralleltests": "No",
+			"testdatafrom":"Excel",
 			"testdatajsonfile": "testJSONData\\stocksData.json",
-			"testdataxlsfile": "",
+			"testdataxlsfile": "XLS_Data\\TestExcelData.xlsx",
 			"suitefilename": "suites\\stocksuite.json"
 		}
 	]

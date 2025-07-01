@@ -1,4 +1,4 @@
-package extentReports;
+package Reporter;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
@@ -16,11 +16,10 @@ public class ExtentManager {
     public static ExtentReports getReport() {
         if (extentReports == null) {
             extentReports = new ExtentReports();
-
-            Date date = new Date();
-            String reportFolderName = date.toString().replaceAll(":", "_").replaceAll(" ", "-");
-            String reportPath = System.getProperty("user.dir") + "//reports//" + reportFolderName;
-            screenshotPath = reportPath + "//screnshots";
+            String path = System.getProperty("logPath");
+            String reportPath=path.substring(0,path.length()-9);
+//            System.out.println(reportPath+"******------******");
+            screenshotPath = reportPath + "//screenshots";
             File file=new File(screenshotPath);
             file.mkdirs();
 

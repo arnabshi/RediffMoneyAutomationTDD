@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Manage Portfolio Suite : Delete Portfolio Method 1</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>3/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/0/3</td>
 </tr><tr>
-<td>Started on:</td><td>Sun Mar 02 18:55:03 IST 2025</td>
+<td>Started on:</td><td>Tue Jul 01 22:51:06 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>119 seconds (119578 ms)</td>
+<tr><td>Total time:</td><td>0 seconds (43 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,28 +67,207 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
 <tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testCases.SessionTest.beforeTest()'><b>beforeTest</b><br>Test class: testCases.SessionTest<br>Parameters: org.testng.TestRunner@368d5c00</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;String.equalsIgnoreCase(String)&quot; because &quot;runMode&quot; is null
+	at testbase.BaseTest.beforeTest(BaseTest.java:77)
+	at runner.TestNGRunner.run(TestNGRunner.java:32)
+	at runner.JSONRunner.main(JSONRunner.java:148)
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1272744797", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1272744797'><pre>java.lang.NullPointerException: Cannot invoke &quot;String.equalsIgnoreCase(String)&quot; because &quot;runMode&quot; is null
+	at testbase.BaseTest.beforeTest(BaseTest.java:77)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:655)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:644)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at runner.TestNGRunner.run(TestNGRunner.java:32)
+	at runner.JSONRunner.main(JSONRunner.java:148)
+</pre></div></td>
+<td>0</td>
+<td>testCases.SessionTest@1a6f2363</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testCases.SessionTest.beforeMethod()'><b>beforeMethod</b><br>Test class: testCases.SessionTest</td>
+<td></td>
+<td>0</td>
+<td>testCases.SessionTest@1a6f2363</td></tr>
+<tr>
+<td title='testCases.SessionTest.afterMethod()'><b>afterMethod</b><br>Test class: testCases.SessionTest</td>
+<td></td>
+<td>0</td>
+<td>testCases.SessionTest@1a6f2363</td></tr>
+<tr>
+<td title='testCases.SessionTest.beforeMethod()'><b>beforeMethod</b><br>Test class: testCases.SessionTest</td>
+<td></td>
+<td>0</td>
+<td>testCases.SessionTest@1a6f2363</td></tr>
+<tr>
+<td title='testCases.SessionTest.afterMethod()'><b>afterMethod</b><br>Test class: testCases.SessionTest</td>
+<td></td>
+<td>0</td>
+<td>testCases.SessionTest@1a6f2363</td></tr>
+<tr>
+<td title='testCases.PortfolioTest.afterMethod()'><b>afterMethod</b><br>Test class: testCases.PortfolioTest</td>
+<td></td>
+<td>0</td>
+<td>testCases.PortfolioTest@2427e004</td></tr>
+<tr>
+<td title='testCases.PortfolioTest.beforeMethod()'><b>beforeMethod</b><br>Test class: testCases.PortfolioTest</td>
+<td></td>
+<td>0</td>
+<td>testCases.PortfolioTest@2427e004</td></tr>
+<tr>
+<td title='testCases.SessionTest.afterTest()'><b>afterTest</b><br>Test class: testCases.SessionTest</td>
+<td></td>
+<td>0</td>
+<td>testCases.SessionTest@1a6f2363</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
 <td><b>Instance</b></td>
 </tr>
 <tr>
 <td title='testCases.SessionTest.openUp()'><b>openUp</b><br>Test class: testCases.SessionTest</td>
-<td></td>
-<td>52</td>
-<td>testCases.SessionTest@3578436e</td></tr>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;String.equalsIgnoreCase(String)&quot; because &quot;runMode&quot; is null
+	at testbase.BaseTest.beforeTest(BaseTest.java:77)
+	at runner.TestNGRunner.run(TestNGRunner.java:32)
+	at runner.JSONRunner.main(JSONRunner.java:148)
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace67811496", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace67811496'><pre>java.lang.NullPointerException: Cannot invoke &quot;String.equalsIgnoreCase(String)&quot; because &quot;runMode&quot; is null
+	at testbase.BaseTest.beforeTest(BaseTest.java:77)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:655)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:644)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at runner.TestNGRunner.run(TestNGRunner.java:32)
+	at runner.JSONRunner.main(JSONRunner.java:148)
+</pre></div></td>
+<td>0</td>
+<td>testCases.SessionTest@1a6f2363</td></tr>
 <tr>
-<td title='testCases.SessionTest.doLogin()'><b>doLogin</b><br>Test class: testCases.SessionTest<br>Parameters: org.testng.TestRunner@221dad51</td>
-<td></td>
-<td>45</td>
-<td>testCases.SessionTest@3578436e</td></tr>
+<td title='testCases.SessionTest.doLogin()'><b>doLogin</b><br>Test class: testCases.SessionTest<br>Parameters: org.testng.TestRunner@368d5c00</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;String.equalsIgnoreCase(String)&quot; because &quot;runMode&quot; is null
+	at testbase.BaseTest.beforeTest(BaseTest.java:77)
+	at runner.TestNGRunner.run(TestNGRunner.java:32)
+	at runner.JSONRunner.main(JSONRunner.java:148)
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1393112209", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1393112209'><pre>java.lang.NullPointerException: Cannot invoke &quot;String.equalsIgnoreCase(String)&quot; because &quot;runMode&quot; is null
+	at testbase.BaseTest.beforeTest(BaseTest.java:77)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:655)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:644)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at runner.TestNGRunner.run(TestNGRunner.java:32)
+	at runner.JSONRunner.main(JSONRunner.java:148)
+</pre></div></td>
+<td>0</td>
+<td>testCases.SessionTest@1a6f2363</td></tr>
 <tr>
-<td title='testCases.PortfolioTest.deletePortfolio()'><b>deletePortfolio</b><br>Test class: testCases.PortfolioTest<br>Parameters: org.testng.TestRunner@221dad51</td>
-<td></td>
-<td>21</td>
-<td>testCases.PortfolioTest@706a04ae</td></tr>
+<td title='testCases.PortfolioTest.deletePortfolio()'><b>deletePortfolio</b><br>Test class: testCases.PortfolioTest<br>Parameters: org.testng.TestRunner@368d5c00</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;String.equalsIgnoreCase(String)&quot; because &quot;runMode&quot; is null
+	at testbase.BaseTest.beforeTest(BaseTest.java:77)
+	at runner.TestNGRunner.run(TestNGRunner.java:32)
+	at runner.JSONRunner.main(JSONRunner.java:148)
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1842952737", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1842952737'><pre>java.lang.NullPointerException: Cannot invoke &quot;String.equalsIgnoreCase(String)&quot; because &quot;runMode&quot; is null
+	at testbase.BaseTest.beforeTest(BaseTest.java:77)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:655)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:644)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at runner.TestNGRunner.run(TestNGRunner.java:32)
+	at runner.JSONRunner.main(JSONRunner.java:148)
+</pre></div></td>
+<td>0</td>
+<td>testCases.PortfolioTest@2427e004</td></tr>
 </table><p>
 </body>
 </html>

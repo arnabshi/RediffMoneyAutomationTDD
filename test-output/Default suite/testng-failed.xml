@@ -12,6 +12,7 @@
           <include name="beforeTest"/>
           <include name="afterMethod"/>
           <include name="deletePortfolio"/>
+          <include name="beforeSuite"/>
         </methods>
       </class> <!-- testCases.PortfolioTest -->
     </classes>

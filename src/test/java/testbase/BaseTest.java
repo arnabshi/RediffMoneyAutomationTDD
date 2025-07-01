@@ -1,16 +1,20 @@
 package testbase;
 
 import Keywords.ApplicationKeywords;
+import Reporter.ExtentManager;
+
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 
-import extentReports.ExtentManager;
 import runner.DataUtil;
+import runner.ExcelReader;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.ParseException;
 import org.testng.ITestContext;
@@ -24,6 +28,7 @@ public class BaseTest {
 	public ApplicationKeywords app;
 	public ExtentReports extentReports;
 	public ExtentTest extentTest;
+	public Logger logger;
 
 	@BeforeTest
 	public void beforeTest(ITestContext iTestContext) throws FileNotFoundException, IOException, ParseException {
@@ -36,28 +41,37 @@ public class BaseTest {
 		extentTest.log(Status.INFO, "Starting Test : " + iTestContext.getCurrentXmlTest().getName());
 		app.setExtentTest(extentTest);
 
+		logger=LogManager.getLogger();
+		app.setLogger(logger);
+
 		iTestContext.setAttribute("app", app);
 		iTestContext.setAttribute("extentReports", extentReports);
 		iTestContext.setAttribute("extentTest", extentTest);
+		iTestContext.setAttribute("logger", logger);
 
 		// for test data read
 
 		// Read Test JSON
-		String testdatajsonfilePath = iTestContext.getCurrentXmlTest().getParameter("testdatajsonfile");
+		String testdatafilePath = iTestContext.getCurrentXmlTest().getParameter("testdatafile");
 		// String testdataxlsfilePath
 		// =iTestContext.getCurrentXmlTest().getParameter("testdataxlsfile");
 
 		String dataFlag = iTestContext.getCurrentXmlTest().getParameter("dataflag");
 		int iteration = Integer.parseInt(iTestContext.getCurrentXmlTest().getParameter("dataSetID"));
 		String suiteName = iTestContext.getCurrentXmlTest().getParameter("suiteName");
+		String testDataType = iTestContext.getCurrentXmlTest().getParameter("testDataType");
 
-		System.out.println(testdatajsonfilePath + "  " + dataFlag + "  " + iteration + "  " + suiteName);
+//		System.out.println(testdatafilePath + "  " + dataFlag + "  " + iteration + "  " + suiteName);
 
-		// This is for JSON Reader
-		JSONObject data = new DataUtil().getTestData(testdatajsonfilePath, dataFlag, iteration);
-
+		JSONObject data=null;
 		// This is for Excel Reader
-//		JSONObject data = new ExcelReader().getTestData(sheetName, dataFlag, testdatajsonfilePath, iteration);
+		if(testDataType.equalsIgnoreCase("Excel")) {
+			data = new ExcelReader().getTestData(suiteName, dataFlag, testdatafilePath, iteration);
+		}
+		else {
+			// This is for JSON Reader
+			data = new DataUtil().getTestData(testdatafilePath, dataFlag, iteration);
+		}
 
 		String runMode = (String) data.get("runmode");
 		if (!runMode.equalsIgnoreCase("Yes")) {
@@ -76,6 +90,7 @@ public class BaseTest {
 		app = (ApplicationKeywords) iTestContext.getAttribute("app");
 		extentReports = (ExtentReports) iTestContext.getAttribute("extentReports");
 		extentTest = (ExtentTest) iTestContext.getAttribute("extentTest");
+		logger=(Logger) iTestContext.getAttribute("logger");
 
 		String isCritical = (String) iTestContext.getAttribute("isCritical");
 		if (isCritical != null && isCritical.equals("true")) {

@@ -4,8 +4,11 @@ import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.markuputils.ExtentColor;
 import com.aventstack.extentreports.markuputils.MarkupHelper;
-import extentReports.ExtentManager;
+
+import Reporter.ExtentManager;
+
 import org.apache.commons.io.FileUtils;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -26,6 +29,7 @@ public class GenericKeywords {
     public Properties prop;
     public ExtentTest test;
     public SoftAssert softAssert;
+    public Logger logger;
 
     public void openBrowser(String browserKey) {
         String browserName = prop.getProperty(browserKey);
@@ -100,8 +104,10 @@ public class GenericKeywords {
             FileUtils.copyFile(file, new File(ExtentManager.screenshotPath + "//" + screenShot));
 //          logInfo("Screenshot captured");
             test.log(Status.FAIL, MarkupHelper.createLabel("Screenshot", ExtentColor.RED));
-            test.log(Status.FAIL, "<img src='" + ExtentManager.screenshotPath + '/' 
-            		+ screenShot + "' style='width:100%;'/>");
+//            test.log(Status.FAIL, "<img src='" + ExtentManager.screenshotPath + '/'
+//            		+ screenShot + "' style='width:100%;'/>");
+            String ssPath="screenshots" + "/" + screenShot;
+            test.log(Status.FAIL, "<img src='" + ssPath + "' style='width:100%;'/>");
         } catch (IOException e) {
             logError("Unable to take screenshot" + e.getMessage());
             e.printStackTrace();
@@ -125,7 +131,7 @@ public class GenericKeywords {
         while (i != 10) {
 
             Long d = (Long) js.executeScript("return jQuery.active;");
-            System.out.println(d);
+//            System.out.println(d);
             if (d.longValue() == 0)
                 break;
             else
@@ -149,8 +155,14 @@ public class GenericKeywords {
         this.test = extentTest;
     }
     
+    public void setLogger(Logger logger) {
+    	
+		this.logger=logger;
+	}
+    
     public void reportFailure(String msg,boolean isCritical) {
     	logError(msg);
+        logger.error(msg);
     	takeScreenshot();
     	softAssert.fail(msg);
     	if(isCritical) {
@@ -170,18 +182,23 @@ public class GenericKeywords {
     //log methods
     public void logInfo(String msg) {
         test.log(Status.INFO, msg);
+        logger.info(msg);
     }
 
     public void logError(String msg) {
         test.log(Status.FAIL, msg);
+        logger.error(msg);
+        takeScreenshot();
     }
 
     public void logWarning(String msg) {
         test.log(Status.WARNING, msg);
+        logger.warn(msg);
     }
 
     public void logSkip(String msg) {
         test.log(Status.SKIP, msg);
+        logger.warn(msg);
     }
     public void logPASS(String msg) {
         test.log(Status.PASS, msg);

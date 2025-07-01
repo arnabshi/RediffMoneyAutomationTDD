@@ -5,9 +5,11 @@ import java.io.FileReader;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 import java.util.Map;
 
+import Reporter.ExtentManager;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
@@ -15,10 +17,16 @@ import org.json.simple.parser.ParseException;
 
 public class JSONRunner {
 
-	public static void main(String[] args) throws FileNotFoundException, IOException, ParseException {
+	public static void main(String[] args) throws FileNotFoundException, IOException, ParseException, Exception {
 
+		//setting report path
+		Date date = new Date();
+		String reportFolderName = date.toString().replaceAll(":", "_").replaceAll(" ", "-");
+		String path = System.getProperty("user.dir") + "//reports//" + reportFolderName;
+		System.setProperty("logPath", path+ "/logs.log");
+
+		// for testconfig.json
 		Map<String, String> classMethods = new DataUtil().loadClassMethods();
-
 		String classPath = System.getProperty("user.dir") + "\\src\\test\\resources\\projectJSONs\\testconfig.json";
 
 		JSONParser parser = new JSONParser();
@@ -42,8 +50,9 @@ public class JSONRunner {
 				String suiteName = (String) testSuite.get("name");
 				String paralleltests = (String) testSuite.get("paralleltests");
 				String testdatajsonfile = (String) testSuite.get("testdatajsonfile");
-//				String testdataxlsfile = (String) testSuite.get("testdataxlsfile");
+				String testdataxlsfile = (String) testSuite.get("testdataxlsfile");
 				String suitefilename = (String) testSuite.get("suitefilename");
+				String testdatafrom = (String) testSuite.get("testdatafrom");
 
 				boolean pTest = false;
 				if (paralleltests.equalsIgnoreCase("Yes")) {
@@ -51,15 +60,16 @@ public class JSONRunner {
 				}
 
 				testNG.createSuite(suiteName, pTest);
-				System.out.println("Executing Test Suite -- " + suiteName);
+//				System.out.println("Executing Test Suite -- " + suiteName);
 
 				String testsuitePath = System.getProperty("user.dir") + "\\src\\test\\resources\\projectJSONs\\"
 						+ suitefilename;
 
+				// for portfoliosuite.json / stocksuite.json
 				JSONParser suiteParser = new JSONParser();
 				JSONObject suiteJson = (JSONObject) suiteParser.parse(new FileReader(new File(testsuitePath)));
 
-//				testNG.addListener("listner.MyTestngListner");
+				testNG.addListener("listner.MyTestngListner");
 
 				JSONArray suiteTestCases = (JSONArray) suiteJson.get("testcases");
 				for (int suiteTest = 0; suiteTest < suiteTestCases.size(); suiteTest++) {
@@ -76,21 +86,24 @@ public class JSONRunner {
 						if (runMode.equalsIgnoreCase("Yes")) {
 							// Number of DataSet -- Number of Test Case Execution against Test Data
 
-							// Location for JSON DATA
-							String testDataJSONPath = System.getProperty("user.dir")
-									+ "\\src\\test\\resources\\projectJSONs\\" + testdatajsonfile;
-							int dataSets = new DataUtil().getDataSets(testDataJSONPath, dataflag);
+							String testDataPath = "";
+							int dataSets = 0;
+							if (testdatafrom.equalsIgnoreCase("Excel")) {
+								testDataPath = System.getProperty("user.dir") + "\\src\\test\\resources\\projectJSONs\\"
+										+ testdataxlsfile;
+								dataSets = new ExcelReader().getDataSets(suiteName, dataflag, testDataPath);
+							} else {
+								testDataPath = System.getProperty("user.dir") + "\\src\\test\\resources\\projectJSONs\\"
+										+ testdatajsonfile;
+								dataSets = new DataUtil().getDataSets(testDataPath, dataflag);
+							}
 
-							// Location for Excel Data
-//							String testDataJSONPath = System.getProperty("user.dir") + "/src/test/resources/projectJSONs/"
-//									+ testdataxlsfile;
-//							int dataSets = new ExcelReader().getDataSets(suiteName, dataflag, testDataJSONPath);
-
+							JSONArray parametervalues = (JSONArray) testCase.get("parametervalues");
+							JSONArray methods = (JSONArray) testCase.get("methods");
+							
 							for (int dataSetID = 0; dataSetID < dataSets; dataSetID++) {
 
-								JSONArray parametervalues = (JSONArray) testCase.get("parametervalues");
-								JSONArray methods = (JSONArray) testCase.get("methods");
-								System.out.println("Executing Test Case :: " + executionname);
+//								System.out.println("Executing Test Case :: " + executionname);
 
 								testNG.addTest(suiteName + " : " + executionname + " " + (dataSetID + 1));
 								for (int params = 0; params < parameternames.size(); params++) {
@@ -98,12 +111,13 @@ public class JSONRunner {
 											(String) parametervalues.get(params));
 								}
 
-								testNG.addTestParameter("testdatajsonfile", testDataJSONPath);
+								testNG.addTestParameter("testdatafile", testDataPath);
 								testNG.addTestParameter("dataflag", dataflag);
 								testNG.addTestParameter("dataSetID", String.valueOf(dataSetID));
 								testNG.addTestParameter("suiteName", suiteName);
 								testNG.addTestParameter("userName", userName);
 								testNG.addTestParameter("password", password);
+								testNG.addTestParameter("testDataType", testdatafrom);
 
 								// Read Methods and associated Classes
 								List<String> includeMethods = new ArrayList<String>();
