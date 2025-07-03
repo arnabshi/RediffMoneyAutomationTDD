@@ -11,7 +11,7 @@ pipeline {
 
         stage('Build & Compile') {
             steps {
-                echo "🔧 Running mvn clean test-compile..."
+                echo "Running mvn clean test-compile..."
                 sh 'mvn clean test-compile'
             }
         }
