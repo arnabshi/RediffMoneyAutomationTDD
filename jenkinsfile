@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Checkout Code') {
             steps {
-                echo "🔄 Checking out code..."
+                echo "Checking out code..."
                 git branch: 'master', url: 'https://github.com/arnabshi/RediffMoneyAutomationTDD.git'
             }
         }
@@ -18,7 +18,7 @@ pipeline {
 
         stage('Run Tests') {
             steps {
-                echo "🚀 Running tests using exec:java (JSONRunner)..."
+                echo "Running tests using exec:java (JSONRunner)..."
                 sh 'mvn exec:java'
             }
         }
@@ -26,13 +26,13 @@ pipeline {
 
     post {
         success {
-            echo "✅ Tests passed successfully!"
+            echo "Tests passed successfully!"
         }
         failure {
-            echo "❌ Tests failed!"
+            echo "Tests failed!"
         }
         always {
-            echo "📬 Pipeline completed (success or failure)."
+            echo "Pipeline completed (success or failure)."
         }
     }
 }
