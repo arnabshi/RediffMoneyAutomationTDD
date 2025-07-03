@@ -12,14 +12,14 @@ pipeline {
         stage('Build & Compile') {
             steps {
                 echo "Running mvn clean test-compile..."
-                sh 'mvn clean test-compile'
+                bat 'mvn clean test-compile'
             }
         }
 
         stage('Run Tests') {
             steps {
                 echo "Running tests using exec:java (JSONRunner)..."
-                sh 'mvn exec:java'
+                bat 'mvn exec:java'
             }
         }
     }
